@@ -2,11 +2,12 @@ title: "Maitri Shah"
 description: "M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
 remote_theme: mmistakes/minimal-mistakes
 
+
 plugins:
   - jekyll-include-cache
 
 author:
-  name: ""
+  name: "Maitri Shah"
   avatar: "/assets/images/profile.jpg"
   bio: "M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
   location: "Saarbrücken, Germany"
