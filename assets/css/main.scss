@@ -104,3 +104,19 @@ html { font-size: 15px !important; }
 .page__content {
   font-size: 0.93em !important;
 }
+
+/* Add vertical spacing before section headings inside content */
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6 {
+  margin-top: 1.4rem !important;
+  margin-bottom: 0.5rem;
+}
+
+/* Relax spacing around horizontal rules separating sections */
+.page__content hr {
+  margin: 1.25rem 0;
+}
