@@ -1,21 +1,16 @@
-/* Black masthead bar */
+/* Black banner at top */
 .masthead {
   background: #000 !important;
   border-bottom: none;
-  padding: 0.5rem 0;
+  padding: 0.6rem 1rem;
 }
 
-/* Hide site title (since it's already in splash header) */
+/* Hide duplicate site title at top left */
 .site-title {
   display: none !important;
 }
 
-/* Align menu to right, links in white */
-.masthead__menu {
-  float: right;
-  margin-right: 2rem;
-}
-
+/* Nav links in white */
 .masthead__menu a {
   color: #fff !important;
   margin-left: 20px;
@@ -26,9 +21,4 @@
 .masthead__menu a:hover {
   color: #ddd !important;
   text-decoration: underline;
-}
-
-/* Hide site title in top masthead only */
-.site-title {
-  display: none !important;
 }
