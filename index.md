@@ -12,7 +12,7 @@ header:
 excerpt: "M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
 ---
 
-<img src="/assets/images/profile.jpg" alt="Maitri Shah" width="200" style="border-radius: 50%; margin: 20px auto; display: block;" />
+<img src="/assets/images/profile.jpg" alt="Maitri Shah" width="220" height="220" style="object-fit: cover; border-radius: 12px; margin: 20px auto; display: block;" />
 
 # Welcome 👋
 
