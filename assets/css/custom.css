@@ -1,0 +1,30 @@
+/* Make masthead black */
+.masthead {
+  background: #000 !important;
+  padding: 10px 0;
+}
+
+/* Center logo/title area */
+.masthead__inner-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Remove site title (since we show your name in splash header) */
+.site-title {
+  display: none !important;
+}
+
+/* Navigation menu styling */
+.masthead__menu a {
+  color: #fff !important;
+  margin-left: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.masthead__menu a:hover {
+  text-decoration: underline;
+  color: #f0f0f0 !important;
+}
