@@ -77,7 +77,8 @@ nav.skip-links {
 
 /* Increase space between title and content on inner pages */
 .layout--single .page__inner-wrap > header {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.25rem; /* avoid margin-collapsing */
 }
 .layout--single .page__title {
   margin-bottom: 0.25rem; /* keep a small gap inside header */
