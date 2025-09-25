@@ -2,7 +2,6 @@ title: "Maitri Shah"
 description: "M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
 remote_theme: mmistakes/minimal-mistakes
 
-
 plugins:
   - jekyll-include-cache
 
@@ -20,6 +19,7 @@ author:
     - label: "CV"
       url: "/assets/pdf/Maitri_Shah_CV.pdf"
 
+# Navigation
 nav:
   - title: "Home"
     url: /
@@ -31,6 +31,6 @@ nav:
     url: /about/
   - title: "Team"
     url: /team/
-    
-include:
-  - assets/css/custom.css
+
+# Theme skin (controls colors!)
+minimal_mistakes_skin: dark
