@@ -15,6 +15,11 @@
   display: none !important;
 }
 
+/* Hide skip-links bar (accessibility links) */
+nav.skip-links {
+  display: none !important;
+}
+
 /* Hide duplicate site title in masthead */
 .site-title {
   display: none !important;
@@ -36,6 +41,7 @@
 /* Keep hero excerpt on one line (desktop), allow wrap on small screens */
 .page__hero--overlay .page__lead {
   white-space: nowrap;
+  max-width: none;
 }
 
 @media (max-width: 768px) {
