@@ -99,3 +99,8 @@ html { font-size: 15px !important; }
 @media (min-width: 48em) { html { font-size: 16px !important; } }
 @media (min-width: 64em) { html { font-size: 18px !important; } }
 @media (min-width: 80em) { html { font-size: 20px !important; } }
+
+/* Container-level downscale for body copy without affecting rem-sized headings */
+.page__content {
+  font-size: 0.93em !important;
+}
