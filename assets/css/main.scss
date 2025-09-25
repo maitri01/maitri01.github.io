@@ -84,7 +84,12 @@ nav.skip-links {
   margin-bottom: 0.25rem; /* keep a small gap inside header */
 }
 
-/* Add spacing before the content block on inner pages */
-.layout--single .page__content {
-  margin-top: 1.25rem;
+/* Robust spacing between title and body on inner pages */
+.layout--single .page__inner-wrap > header + .page__content {
+  margin-top: 1.5rem !important;  /* ensure space even if theme resets margins */
+  padding-top: 0.1rem;            /* break any margin-collapsing */
+}
+/* If the first element is a paragraph, nudge it down slightly */
+.layout--single .page__content > p:first-child {
+  margin-top: 0.75rem;
 }
