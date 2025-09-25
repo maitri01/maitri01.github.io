@@ -10,6 +10,11 @@
   padding: 0.4rem 1rem;
 }
 
+/* Hide masthead entirely on splash (home) */
+.layout--splash .masthead {
+  display: none !important;
+}
+
 /* Hide duplicate site title in masthead */
 .site-title {
   display: none !important;
@@ -28,3 +33,13 @@
   text-decoration: underline;
 }
 
+/* Keep hero excerpt on one line (desktop), allow wrap on small screens */
+.page__hero--overlay .page__lead {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .page__hero--overlay .page__lead {
+    white-space: normal;
+  }
+}
