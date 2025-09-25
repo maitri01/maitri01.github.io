@@ -31,3 +31,6 @@ nav:
     url: /about/
   - title: "Team"
     url: /team/
+# Force Jekyll to include custom CSS
+include:
+  - assets/css/custom.css
