@@ -1,0 +1,30 @@
+---
+---
+@import "minimal-mistakes/skins/dark";
+@import "minimal-mistakes";
+
+/* Custom overrides */
+.masthead {
+  background: #000 !important;
+  border-bottom: none;
+  padding: 0.4rem 1rem;
+}
+
+/* Hide duplicate site title in masthead */
+.site-title {
+  display: none !important;
+}
+
+/* White nav links */
+.masthead__menu a {
+  color: #fff !important;
+  margin-left: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.masthead__menu a:hover {
+  color: #ddd !important;
+  text-decoration: underline;
+}
+
