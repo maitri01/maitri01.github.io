@@ -8,7 +8,7 @@ header:
   actions:
     - label: "📄 View CV"
       url: "/cv/"
-excerpt: "**Maitri Shah** · M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
+excerpt: "M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
 ---
 
 <img src="/assets/images/profile.jpg" alt="Maitri Shah" width="200" style="border-radius: 8px; margin: 20px auto; display: block;" />
