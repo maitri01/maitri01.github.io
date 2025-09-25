@@ -17,6 +17,11 @@ nav.skip-links {
   display: none !important;
 }
 
+/* Ensure nav component hidden if theme renders without masthead wrapper */
+#site-nav.greedy-nav {
+  display: none !important;
+}
+
 /* Hide duplicate site title in masthead */
 .site-title {
   display: none !important;
