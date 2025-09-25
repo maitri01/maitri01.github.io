@@ -58,4 +58,14 @@ nav.skip-links {
   .page__hero--overlay .wrapper {
     max-width: 1280px; /* was ~1000-1100 in theme */
   }
+  /* widen inner content columns */
+  .page,
+  .page__inner-wrap,
+  .archive {
+    max-width: 1280px;
+  }
+  .page {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
