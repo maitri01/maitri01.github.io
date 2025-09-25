@@ -4,16 +4,14 @@ layout: splash
 permalink: /
 header:
   overlay_color: "#000"
-  overlay_filter: "0.25"
-  overlay_image: /assets/images/banner.jpg
+  overlay_filter: "0.3"
   actions:
     - label: "📄 View CV"
       url: "/cv/"
-excerpt: "M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
-author_profile: true
+excerpt: "**Maitri Shah** · M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
 ---
 
-<img src="/assets/images/profile.jpg" alt="Maitri Shah" width="200" height="200" style="object-fit: cover; border-radius: 12px; margin: 20px auto; display: block;" />
+<img src="/assets/images/profile.jpg" alt="Maitri Shah" width="200" style="border-radius: 8px; margin: 20px auto; display: block;" />
 
 # Welcome 👋
 
