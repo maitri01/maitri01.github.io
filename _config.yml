@@ -6,7 +6,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name: "Maitri Shah"
+  name: ""
   avatar: "/assets/images/profile.jpg"
   bio: "M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
   location: "Saarbrücken, Germany"
