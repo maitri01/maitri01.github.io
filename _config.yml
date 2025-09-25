@@ -1,0 +1,39 @@
+title: "Maitri Shah"
+description: "M.Sc. Data Science & AI | Research Assistant at CISPA"
+remote_theme: mmistakes/minimal-mistakes
+
+plugins:
+  - jekyll-include-cache
+
+# Author info
+author:
+  name: "Maitri Shah"
+  avatar: "/assets/images/profile.jpg"
+  bio: "M.Sc. Data Science & AI | HiWi at CISPA"
+  location: "Saarbrücken, Germany"
+  email: "maitriv2001@gmail.com"
+  links:
+    - label: "GitHub"
+      url: "https://github.com/maitri01"
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/in/maitri-shah01"
+    - label: "CV"
+      url: "/assets/pdf/Maitri_Shah_CV.pdf"
+
+# Navigation menu
+nav:
+  - title: "Home"
+    url: /
+  - title: "Projects"
+    url: /projects/
+  - title: "CV"
+    url: /cv/
+  - title: "About"
+    url: /about/
+  - title: "Team"
+    url: /team/
+
+# Footer
+footer:
+  links:
+    - label: "© 2025 Maitri Shah"
