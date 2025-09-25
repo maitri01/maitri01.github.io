@@ -1,16 +1,16 @@
-/* Black banner at top */
+/* Black masthead */
 .masthead {
   background: #000 !important;
   border-bottom: none;
   padding: 0.6rem 1rem;
 }
 
-/* Hide duplicate site title at top left */
+/* Hide duplicate site title */
 .site-title {
   display: none !important;
 }
 
-/* Nav links in white */
+/* White nav links */
 .masthead__menu a {
   color: #fff !important;
   margin-left: 20px;
