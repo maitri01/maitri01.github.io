@@ -4,16 +4,13 @@
 @import "minimal-mistakes";
 
 /* Custom overrides */
+/* Hide masthead (top bar) on all pages */
 .masthead {
-  background: #000 !important;
-  border-bottom: none;
-  padding: 0.4rem 1rem;
-}
-
-/* Hide masthead entirely on splash (home) */
-.layout--splash .masthead {
   display: none !important;
 }
+
+/* (kept for clarity; redundant due to global rule) */
+.layout--splash .masthead { display: none !important; }
 
 /* Hide skip-links bar (accessibility links) */
 nav.skip-links {
