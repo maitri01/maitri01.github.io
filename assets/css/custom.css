@@ -27,3 +27,8 @@
   color: #ddd !important;
   text-decoration: underline;
 }
+
+/* Hide site title in top masthead only */
+.site-title {
+  display: none !important;
+}
