@@ -1,15 +1,14 @@
-title: ""
+title: ""   # keep empty to avoid duplicate name in the top masthead
 description: "M.Sc. Data Science & AI | Research Assistant at CISPA"
 remote_theme: mmistakes/minimal-mistakes
 
 plugins:
   - jekyll-include-cache
 
-# Author info
 author:
-  name: "Maitri Shah"
+  name: "Maitri Shah"   # ✅ this stays, so your name shows in bio/about sections
   avatar: "/assets/images/profile.jpg"
-  bio: "M.Sc. Data Science & AI | HiWi at CISPA"
+  bio: "M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
   location: "Saarbrücken, Germany"
   email: "maitriv2001@gmail.com"
   links:
@@ -20,7 +19,6 @@ author:
     - label: "CV"
       url: "/assets/pdf/Maitri_Shah_CV.pdf"
 
-# Navigation menu
 nav:
   - title: "Home"
     url: /
@@ -32,8 +30,7 @@ nav:
     url: /about/
   - title: "Team"
     url: /team/
-
-# Footer
-footer:
-  links:
-    - label: "© 2025 Maitri Shah"
+# Disable the top masthead (nav bar area)
+minimal_mistakes_skin: default
+show_excerpts: false
+header: false
