@@ -4,9 +4,6 @@ layout: single
 permalink: /projects/
 ---
 
-
-# Projects  
-
 ### QuadTransport — Optimizing Wasserstein Distance  
 I worked on **efficient computation of the Wasserstein distance** for large-scale transport problems.  
 - Implemented an optimized version of the Hungarian Algorithm *(O(iN² log N))* to reduce computational bottlenecks.  
