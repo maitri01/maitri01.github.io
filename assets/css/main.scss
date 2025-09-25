@@ -75,9 +75,9 @@ nav.skip-links {
   }
 }
 
-/* Increase space between title and content on inner pages */
+/* Title-to-content spacing on inner pages (match homepage feel) */
 .layout--single .page__inner-wrap > header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   padding-bottom: 0.25rem; /* avoid margin-collapsing */
 }
 .layout--single .page__title {
@@ -86,7 +86,7 @@ nav.skip-links {
 
 /* Robust spacing between title and body on inner pages */
 .layout--single .page__inner-wrap > header + .page__content {
-  margin-top: 0.9rem !important;  /* tighter than global to match homepage feel */
+  margin-top: 0.25rem !important; /* tight gap under the title */
   padding-top: 0.1rem;            /* break any margin-collapsing */
 }
 /* If the first element is a paragraph, nudge it down slightly */
