@@ -93,3 +93,12 @@ nav.skip-links {
 .layout--single .page__content > p:first-child {
   margin-top: 0.75rem;
 }
+
+/* Slightly smaller body text across pages (not headings) */
+.page__content,
+.page__content p,
+.page__content li,
+.page__content td,
+.page__content th {
+  font-size: 0.95rem;
+}
