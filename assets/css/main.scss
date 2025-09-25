@@ -94,11 +94,8 @@ nav.skip-links {
   margin-top: 0.75rem;
 }
 
-/* Slightly smaller body text across pages (not headings) */
-.page__content,
-.page__content p,
-.page__content li,
-.page__content td,
-.page__content th {
-  font-size: 0.9rem !important;
-}
+/* Global type scale: one step smaller than theme */
+html { font-size: 15px !important; }
+@media (min-width: 48em) { html { font-size: 16px !important; } }
+@media (min-width: 64em) { html { font-size: 18px !important; } }
+@media (min-width: 80em) { html { font-size: 20px !important; } }
