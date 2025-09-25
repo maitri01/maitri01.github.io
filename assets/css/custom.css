@@ -1,22 +1,21 @@
-/* Make masthead black */
+/* Black masthead bar */
 .masthead {
   background: #000 !important;
-  padding: 10px 0;
+  border-bottom: none;
+  padding: 0.5rem 0;
 }
 
-/* Center logo/title area */
-.masthead__inner-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Remove site title (since we show your name in splash header) */
+/* Hide site title (since it's already in splash header) */
 .site-title {
   display: none !important;
 }
 
-/* Navigation menu styling */
+/* Align menu to right, links in white */
+.masthead__menu {
+  float: right;
+  margin-right: 2rem;
+}
+
 .masthead__menu a {
   color: #fff !important;
   margin-left: 20px;
@@ -25,6 +24,6 @@
 }
 
 .masthead__menu a:hover {
+  color: #ddd !important;
   text-decoration: underline;
-  color: #f0f0f0 !important;
 }
