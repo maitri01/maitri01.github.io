@@ -10,6 +10,7 @@ header:
     - label: "📄 View CV"
       url: "/cv/"
 excerpt: "M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
+author_profile: true
 ---
 
 <img src="/assets/images/profile.jpg" alt="Maitri Shah" width="200" height="200" style="object-fit: cover; border-radius: 12px; margin: 20px auto; display: block;" />
