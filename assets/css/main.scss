@@ -121,6 +121,28 @@ html { font-size: 15px !important; }
 .layout--single .page__content h5,
 .layout--single .page__content h6 { margin-top: 1.0rem !important; margin-bottom: 0.45rem; }
 
+/* Reduce gap right after headings on inner pages */
+.layout--single .page__content h1 + p,
+.layout--single .page__content h2 + p,
+.layout--single .page__content h3 + p,
+.layout--single .page__content h4 + p,
+.layout--single .page__content h5 + p,
+.layout--single .page__content h6 + p,
+.layout--single .page__content h1 + ul,
+.layout--single .page__content h2 + ul,
+.layout--single .page__content h3 + ul,
+.layout--single .page__content h4 + ul,
+.layout--single .page__content h5 + ul,
+.layout--single .page__content h6 + ul,
+.layout--single .page__content h1 + ol,
+.layout--single .page__content h2 + ol,
+.layout--single .page__content h3 + ol,
+.layout--single .page__content h4 + ol,
+.layout--single .page__content h5 + ol,
+.layout--single .page__content h6 + ol {
+  margin-top: 0.25rem !important;
+}
+
 /* Relax spacing around horizontal rules separating sections */
 .page__content hr { margin: 2rem 0; }
 .layout--single .page__content hr { margin: 1.5rem 0; }
