@@ -67,5 +67,10 @@ nav.skip-links {
   .page {
     padding-left: 2rem;
     padding-right: 2rem;
+    width: 100% !important;
+  }
+  .layout--single .page__content {
+    max-width: none !important;
+    width: 100% !important;
   }
 }
