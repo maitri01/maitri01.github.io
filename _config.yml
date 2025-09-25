@@ -1,12 +1,12 @@
-title: "Maitri Shah"   # keep this for metadata
-description: "M.Sc. Data Science & AI | Research Assistant at CISPA"
+title: "Maitri Shah"
+description: "M.Sc. Data Science & AI | Universität des Saarlandes · Research Assistant at CISPA"
 remote_theme: mmistakes/minimal-mistakes
 
 plugins:
   - jekyll-include-cache
 
 author:
-  name: "Maitri Shah"   # shows in bio cards
+  name: "Maitri Shah"
   avatar: "/assets/images/profile.jpg"
   bio: "M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
   location: "Saarbrücken, Germany"
