@@ -82,3 +82,8 @@ nav.skip-links {
 .layout--single .page__title {
   margin-bottom: 0.25rem; /* keep a small gap inside header */
 }
+
+/* Add spacing before the content block on inner pages */
+.layout--single .page__content {
+  margin-top: 1.25rem;
+}
