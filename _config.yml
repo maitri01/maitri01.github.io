@@ -1,4 +1,4 @@
-title: ""   # keep empty to avoid duplicate name in the top masthead
+title: ""   # keep empty so "Maitri Shah" doesn't appear twice
 description: "M.Sc. Data Science & AI | Research Assistant at CISPA"
 remote_theme: mmistakes/minimal-mistakes
 
@@ -6,7 +6,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name: "Maitri Shah"   # ✅ this stays, so your name shows in bio/about sections
+  name: "Maitri Shah"
   avatar: "/assets/images/profile.jpg"
   bio: "M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
   location: "Saarbrücken, Germany"
@@ -19,6 +19,7 @@ author:
     - label: "CV"
       url: "/assets/pdf/Maitri_Shah_CV.pdf"
 
+# Navigation Menu
 nav:
   - title: "Home"
     url: /
@@ -30,7 +31,3 @@ nav:
     url: /about/
   - title: "Team"
     url: /team/
-# Disable the top masthead (nav bar area)
-minimal_mistakes_skin: default
-show_excerpts: false
-header: false
