@@ -4,11 +4,15 @@ layout: single
 permalink: /about/
 ---
 
-Hi, I’m **Maitri Shah** 👋  
+Hi, I’m <strong>Maitri Shah</strong>.
 
-- M.Sc. student in **Data Science & AI** at Saarland University, Germany  
-- **Research Assistant (HiWi)** at CISPA Helmholtz Center for Information Security  
-- Interested in **machine learning, optimization, and trustworthy AI**  
+- M.Sc. student in <strong>Data Science & AI</strong> at <strong>Universität des Saarlandes</strong>
+- <strong>Research Assistant (HiWi)</strong> at <strong>CISPA</strong>
+- Interested in <strong>machine learning</strong>, <strong>optimization</strong>, and <strong>trustworthy AI</strong>
 
-Outside of research, I enjoy:  
-🎨 Painting · ✈️ Traveling · 👩‍🏫 Mentoring students in ML
+Outside of research, I enjoy:
+
+- Painting
+- Traveling
+- Mentoring students in ML
+

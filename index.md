@@ -6,25 +6,23 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.3"
   actions:
-    - label: "📄 View CV"
+    - label: "View CV"
       url: "/cv/"
 excerpt: "M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
 ---
 
 <img src="/assets/images/profile.jpg" alt="Maitri Shah" width="200" style="border-radius: 8px; margin: 20px auto; display: block;" />
 
-# Welcome 👋
+Hi, I’m <strong>Maitri Shah</strong> — a Master’s student in <strong>Data Science & AI</strong> at <strong>Universität des Saarlandes</strong> and a <strong>Research Assistant at CISPA</strong>.
 
-I’m **Maitri Shah** — a Master’s student in **Data Science & AI** at Universität des Saarlandes  
-and a **Research Assistant at CISPA**.  
+I focus on <strong>machine learning</strong>, <strong>optimization</strong>, and <strong>trustworthy AI</strong>.
 
-I focus on **machine learning, optimization, and trustworthy AI**.  
-
-👉 Explore my [Projects](/projects/) or learn more [About Me](/about/).
+Explore my <a href="/projects/">Projects</a> or learn more <a href="/about/">About Me</a>.
 
 ---
 
-## 🤝 Team  
+## Team
 
-I am part of the **SprintML Lab** at CISPA Helmholtz Center for Information Security.  
-👉 Learn more on the [Team page](/team/) or visit the [SprintML site](https://sprintml.com/team/).
+I am part of the <strong>SprintML Lab</strong> at CISPA Helmholtz Center for Information Security.
+Learn more on the <a href="/team/">Team page</a> or visit the <a href="https://sprintml.com/team/">SprintML site</a>.
+
