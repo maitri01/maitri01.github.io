@@ -86,7 +86,7 @@ nav.skip-links {
 
 /* Robust spacing between title and body on inner pages */
 .layout--single .page__inner-wrap > header + .page__content {
-  margin-top: 1.5rem !important;  /* ensure space even if theme resets margins */
+  margin-top: 0.9rem !important;  /* tighter than global to match homepage feel */
   padding-top: 0.1rem;            /* break any margin-collapsing */
 }
 /* If the first element is a paragraph, nudge it down slightly */
@@ -113,5 +113,14 @@ html { font-size: 15px !important; }
 .page__content h5,
 .page__content h6 { margin-top: 1.50rem !important; margin-bottom: 0.5rem; }
 
+/* Inner pages: reduce heading spacing to avoid excessive gaps */
+.layout--single .page__content h1 { margin-top: 1.4rem !important; margin-bottom: 0.5rem; }
+.layout--single .page__content h2 { margin-top: 1.2rem !important; margin-bottom: 0.5rem; }
+.layout--single .page__content h3 { margin-top: 1.2rem !important; margin-bottom: 0.5rem; }
+.layout--single .page__content h4,
+.layout--single .page__content h5,
+.layout--single .page__content h6 { margin-top: 1.0rem !important; margin-bottom: 0.45rem; }
+
 /* Relax spacing around horizontal rules separating sections */
 .page__content hr { margin: 2rem 0; }
+.layout--single .page__content hr { margin: 1.5rem 0; }
