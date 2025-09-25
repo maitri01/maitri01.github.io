@@ -1,5 +1,4 @@
----
-title: ""
+title: "Maitri Shah"
 layout: splash
 permalink: /
 header:
@@ -25,4 +24,3 @@ Explore my <a href="/projects/">Projects</a> or learn more <a href="/about/">Abo
 
 I am part of the <strong>SprintML Lab</strong> at CISPA Helmholtz Center for Information Security.
 Learn more on the <a href="/team/">Team page</a> or visit the <a href="https://sprintml.com/team/">SprintML site</a>.
-
