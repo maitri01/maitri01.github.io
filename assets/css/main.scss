@@ -3,42 +3,7 @@
 @import "minimal-mistakes/skins/dark";
 @import "minimal-mistakes";
 
-/* Custom overrides */
-/* Hide masthead (top bar) on all pages */
-.masthead {
-  display: none !important;
-}
-
-/* (kept for clarity; redundant due to global rule) */
-.layout--splash .masthead { display: none !important; }
-
-/* Hide skip-links bar (accessibility links) */
-nav.skip-links {
-  display: none !important;
-}
-
-/* Ensure nav component hidden if theme renders without masthead wrapper */
-#site-nav.greedy-nav {
-  display: none !important;
-}
-
-/* Hide duplicate site title in masthead */
-.site-title {
-  display: none !important;
-}
-
-/* White nav links */
-.masthead__menu a {
-  color: #fff !important;
-  margin-left: 20px;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.masthead__menu a:hover {
-  color: #ddd !important;
-  text-decoration: underline;
-}
+/* Custom overrides (trimmed to active rules) */
 
 /* Keep hero excerpt on one line (desktop), allow wrap on small screens */
 .page__hero--overlay .page__lead {
