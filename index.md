@@ -1,5 +1,5 @@
-﻿---
-title: "Maitri Shah"
+---
+title: "Maitri Vignesh Shah"
 layout: splash
 permalink: /
 header:
@@ -13,11 +13,13 @@ header:
 excerpt: "M.Sc. Data Science & AI @ Universität des Saarlandes | Research Assistant @ CISPA"
 ---
 
-Hi, I’m <strong>Maitri Shah</strong> — a Master’s student in <strong>Data Science & AI</strong> at <strong>Universität des Saarlandes</strong> and a <strong>Research Assistant at CISPA</strong>.
+## Quick Intro
 
-I focus on <strong>machine learning</strong>, <strong>optimization</strong>, and <strong>trustworthy AI</strong>.
+I am a graduate student specializing in Machine Learning and Trustworthy AI.
 
-Explore my <a href="/projects/">Projects</a> or learn more <a href="/about/">About Me</a>.
+Currently, I am a Research Assistant (HiWi) in the SprintML Lab at CISPA, where I contribute to research on Trustworthy Machine Learning. My current focus is on developing the technical framework, baseline solutions, and test pipelines for the AI European Championship.
+
+Previously, during my B.Tech in Artificial Intelligence at NMIMS University (Mumbai, India), I worked on multiple projects ranging from efficient computation methods to deep learning for decision-making, recommendation systems, and biometric identification.
 
 ---
 
@@ -25,3 +27,4 @@ Explore my <a href="/projects/">Projects</a> or learn more <a href="/about/">Abo
 
 I am part of the <strong>SprintML Lab</strong> at CISPA Helmholtz Center for Information Security.
 Learn more on the <a href="/team/">Team page</a> or visit the <a href="https://sprintml.com/team/">SprintML site</a>.
+
