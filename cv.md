@@ -1,23 +1,42 @@
----
+﻿---
 title: "Curriculum Vitae"
 layout: single
 permalink: /cv/
 ---
 
-[Download CV (PDF)](/assets/pdf/Maitri_Shah_CV.pdf)
+### Header
 
-## Education
-- M.Sc. in Data Science & AI — Universität des Saarlandes (2025–present)
-- B.Tech in AI — NMIMS University, Mumbai (2020–2024)
+**Maitri Vignesh Shah — Curriculum Vitae**
 
-## Experience
-- Research Assistant (HiWi) — CISPA, Saarbrücken
-- QuadTransport Project — NMIMS, Mumbai
-- Machine Learning Intern — Corizo, Mumbai
+Download my latest CV below, or view selected highlights of my education, experience, and skills. For the most updated professional profile, visit my [LinkedIn](https://www.linkedin.com/in/maitri-shah01).
 
-## Skills
-- Programming: Python, Java, C++, SQL
-- Frameworks: TensorFlow, PyTorch, scikit-learn, Keras
-- Tools: GitHub, Docker, IntelliJ, VS Code
-- Languages: English (C1), German (A1), Gujarati (C2)
+🔗 [Download CV PDF](/assets/pdf/Maitri_Shah_CV.pdf) | 🔗 [LinkedIn Profile](https://www.linkedin.com/in/maitri-shah01)
 
+---
+
+### Highlights
+
+**Education**
+
+* M.Sc. Data Science & Artificial Intelligence, Universität des Saarlandes
+* B.Tech Artificial Intelligence, NMIMS University (Top 1%, CGPA 3.95/4.0)
+
+**Experience**
+
+* Research Assistant (HiWi), SprintML Lab @ CISPA — Trustworthy ML, AI European Championship framework & evaluation pipelines
+* Machine Learning Intern, Corizo — Implemented ML models for music genre classification
+
+**Projects**
+
+* QuadTransport — Reduced Wasserstein runtime by 50× using algorithmic improvements
+* Intraday Trading LSTM — Achieved 20% ROI through cross-validation
+* Multimodal Biometrics — Combined RGB + Thermal + Voice for robust identification
+
+**Technical Skills**
+Python, Java, C++, SQL, TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas, OpenCV
+
+---
+
+### Footer
+
+For the full version and future updates, please check my [LinkedIn](https://www.linkedin.com/in/maitri-shah01).
