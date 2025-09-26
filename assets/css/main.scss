@@ -75,6 +75,18 @@ nav.skip-links {
   }
 }
 
+/* Homepage hero: thinner band and larger title */
+.layout--splash .page__hero--overlay {
+  padding: 2.25rem 0 2.5rem !important;
+}
+.layout--splash .page__hero--overlay .page__title {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.layout--splash .page__hero--overlay .page__lead {
+  font-size: 1.05rem;
+}
+
 /* Title-to-content spacing on inner pages (match homepage feel) */
 .layout--single .page__inner-wrap > header {
   margin-bottom: 0.5rem;

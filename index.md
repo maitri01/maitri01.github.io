@@ -1,4 +1,4 @@
----
+﻿---
 title: "Maitri Shah"
 layout: splash
 permalink: /
@@ -8,7 +8,9 @@ header:
   actions:
     - label: "View CV"
       url: "/cv/"
-excerpt: "M.Sc. Data Science & AI · Universität des Saarlandes · Research Assistant at CISPA"
+    - label: "Explore Projects"
+      url: "/projects/"
+excerpt: "M.Sc. Data Science & AI @ Universität des Saarlandes | Research Assistant @ CISPA"
 ---
 
 <img src="/assets/images/profile.jpg" alt="Maitri Shah" width="200" style="border-radius: 8px; margin: 20px auto; display: block;" />
@@ -25,4 +27,3 @@ Explore my <a href="/projects/">Projects</a> or learn more <a href="/about/">Abo
 
 I am part of the <strong>SprintML Lab</strong> at CISPA Helmholtz Center for Information Security.
 Learn more on the <a href="/team/">Team page</a> or visit the <a href="https://sprintml.com/team/">SprintML site</a>.
-
