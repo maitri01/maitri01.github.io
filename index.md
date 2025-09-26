@@ -13,8 +13,6 @@ header:
 excerpt: "M.Sc. Data Science & AI @ Universität des Saarlandes | Research Assistant @ CISPA"
 ---
 
-<img src="/assets/images/profile.jpg" alt="Maitri Shah" width="200" style="border-radius: 8px; margin: 20px auto; display: block;" />
-
 Hi, I’m <strong>Maitri Shah</strong> — a Master’s student in <strong>Data Science & AI</strong> at <strong>Universität des Saarlandes</strong> and a <strong>Research Assistant at CISPA</strong>.
 
 I focus on <strong>machine learning</strong>, <strong>optimization</strong>, and <strong>trustworthy AI</strong>.
