@@ -38,10 +38,8 @@ Previously, during my B.Tech in Artificial Intelligence at NMIMS University (Mum
 
 {% include feature_row id="home_projects" %}
 
----
+## Footer / Contact
 
-## Team
-
-I am part of the <strong>SprintML Lab</strong> at CISPA Helmholtz Center for Information Security.
-Learn more on the <a href="/team/">Team page</a> or visit the <a href="https://sprintml.com/team/">SprintML site</a>.
-
+- 📧 <a href="mailto:maitriv2001@gmail.com">maitriv2001@gmail.com</a>
+- 🔗 <a href="https://www.linkedin.com/in/maitri-shah01" target="_blank" rel="noopener">LinkedIn</a>
+- 🔗 <a href="https://github.com/maitri01" target="_blank" rel="noopener">GitHub</a>
