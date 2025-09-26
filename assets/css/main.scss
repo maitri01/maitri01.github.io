@@ -42,7 +42,7 @@
 
 /* Homepage hero: thinner band and larger title */
 .layout--splash .page__hero--overlay {
-  padding: 2.25rem 0 2.5rem !important;
+  padding: 1.25rem 0 1.25rem !important;
 }
 .layout--splash .page__hero--overlay .page__title {
   font-weight: 800;
@@ -75,8 +75,8 @@
 
 /* Mobile: show centered hero photo */
 @media (max-width: 767px) {
-  .layout--splash .page__hero--overlay { padding-top: 3.25rem !important; padding-bottom: 2.25rem !important; }
-  .layout--splash .page__hero--overlay .wrapper { position: relative; padding-top: 150px; }
+  .layout--splash .page__hero--overlay { padding-top: 2.25rem !important; padding-bottom: 1.25rem !important; }
+  .layout--splash .page__hero--overlay .wrapper { position: relative; padding-top: 130px; }
   .layout--splash .page__hero--overlay .wrapper::after {
     content: "";
     position: absolute;
