@@ -89,15 +89,15 @@ nav.skip-links {
 
 /* Homepage hero: right-aligned square photo */
 @media (min-width: 768px) {
-  .layout--splash .page__hero--overlay .wrapper { position: relative; padding-right: 180px; }
+  .layout--splash .page__hero--overlay .wrapper { position: relative; padding-right: 300px; }
   .layout--splash .page__hero--overlay .wrapper::after {
     content: "";
     position: absolute;
-    right: 2rem;
+    right: 5rem;
     top: 50%;
     transform: translateY(-50%);
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     background-image: url('/assets/images/profile.jpg');
     background-size: cover;
     background-position: center;
