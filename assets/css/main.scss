@@ -89,15 +89,37 @@ nav.skip-links {
 
 /* Homepage hero: right-aligned square photo */
 @media (min-width: 768px) {
-  .layout--splash .page__hero--overlay .wrapper { position: relative; padding-right: 300px; }
+  .layout--splash .page__hero--overlay .wrapper { position: relative; padding-right: 380px; }
   .layout--splash .page__hero--overlay .wrapper::after {
     content: "";
     position: absolute;
-    right: 5rem;
+    right: 4rem;
     top: 50%;
     transform: translateY(-50%);
     width: 200px;
     height: 200px;
+    background-image: url('/assets/images/profile.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+/* Mobile: show centered hero photo */
+@media (max-width: 767px) {
+  .layout--splash .page__hero--overlay { padding-top: 3.25rem !important; padding-bottom: 2.25rem !important; }
+  .layout--splash .page__hero--overlay .wrapper { position: relative; padding-top: 150px; }
+  .layout--splash .page__hero--overlay .wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
     background-image: url('/assets/images/profile.jpg');
     background-size: cover;
     background-position: center;
