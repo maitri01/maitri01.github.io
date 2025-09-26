@@ -40,3 +40,4 @@ Python, Java, C++, SQL, TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas, OpenCV
 ### Footer
 
 For the full version and future updates, please check my [LinkedIn](https://www.linkedin.com/in/maitri-shah01).
+
