@@ -102,8 +102,18 @@
 .feature__wrapper { margin-bottom: 0.25rem; border-top: 0 !important; }
 /* Keep h2 underline, but remove any extra top border from card group */
 .page__content h2 + .feature__wrapper { border-top: 0 !important; }
-/* Special-case: avoid double line under 'Selected Projects' heading */
-.page__content h2#selected-projects { border-bottom: none !important; }
+
+/* Selected Projects: tighten spacing and hide permalink icon */
+.page__content h2#selected-projects .header-link { display: none !important; }
+.page__content h2#selected-projects {
+  border-bottom: 1px solid #51555d !important; /* match theme */
+  margin-bottom: 0.35rem; /* reduce gap above line */
+  padding-bottom: 0.15rem;
+}
+.page__content h2#selected-projects + .feature__wrapper {
+  margin-top: 0.4rem;    /* reduce gap below line */
+  border-top: 0 !important;
+}
 
 /* Title-to-content spacing on inner pages (match homepage feel) */
 .layout--single .page__inner-wrap > header {
