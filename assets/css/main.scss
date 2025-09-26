@@ -99,7 +99,9 @@
 .feature__wrapper .archive__item { border: 0 !important; }
 .feature__wrapper::after { display: none !important; }
 .feature__wrapper + hr { display: none !important; }
-.feature__wrapper { margin-bottom: 0.25rem; }
+.feature__wrapper { margin-bottom: 0.25rem; border-top: 0 !important; }
+/* Keep h2 underline, but remove any extra top border from card group */
+.page__content h2 + .feature__wrapper { border-top: 0 !important; }
 
 /* Title-to-content spacing on inner pages (match homepage feel) */
 .layout--single .page__inner-wrap > header {
