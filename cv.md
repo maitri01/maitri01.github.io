@@ -4,8 +4,6 @@ layout: single
 permalink: /cv/
 ---
 
-### Header
-
 **Maitri Vignesh Shah — Curriculum Vitae**
 
 Download my latest CV below, or view selected highlights of my education, experience, and skills. For the most updated professional profile, visit my [LinkedIn](https://www.linkedin.com/in/maitri-shah01).
@@ -33,11 +31,9 @@ Download my latest CV below, or view selected highlights of my education, experi
 * Multimodal Biometrics — Combined RGB + Thermal + Voice for robust identification
 
 **Technical Skills**
-Python, Java, C++, SQL, TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas, OpenCV
+Python, Java (Intermediate), SQL, TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas, OpenCV
 
 ---
-
-### Footer
 
 For the full version and future updates, please check my [LinkedIn](https://www.linkedin.com/in/maitri-shah01).
 
