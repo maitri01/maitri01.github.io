@@ -24,7 +24,7 @@ This project explored financial modeling using LSTMs. I integrated common indica
 
 **Lessons Learned:** Finance data is noisy — avoiding overfitting required careful cross-validation and conservative evaluation.
 
-GitHub: https://github.com/maitri01/Intraday-Trading-Signals-using-a-Classification-LSTM-Model
+GitHub: [Repository](https://github.com/maitri01/Intraday-Trading-Signals-using-a-Classification-LSTM-Model)
 
 ---
 
@@ -34,7 +34,7 @@ Inspired by research papers on social trust in recommender systems, I built a hy
 
 **Lessons Learned:** Sparsity is one of the toughest challenges in recommendation — side information like trust and tags can dramatically improve model performance.
 
-GitHub: https://github.com/maitri01/Trust-and-Tag-aware-Recommendation-Systems
+GitHub: [Repository](https://github.com/maitri01/Trust-and-Tag-aware-Recommendation-Systems)
 
 ---
 
@@ -44,7 +44,7 @@ The aim was robustness: a system that could still function if one modality (like
 
 **Lessons Learned:** Multimodal fusion is powerful but preprocessing and feature alignment took more effort than model building.
 
-GitHub: https://github.com/maitri01/BiometricsFeatureFusion
+GitHub: [Repository](https://github.com/maitri01/BiometricsFeatureFusion)
 
 ---
 
@@ -54,7 +54,7 @@ A diagnostic analytics project where I compared ML models on mobile price catego
 
 **Lessons Learned:** For structured data, classical ML with proper tuning often beats deep learning.
 
-GitHub: https://github.com/maitri01/Data-Analysis-on-Mobile-Price-Classification
+GitHub: [Repository](https://github.com/maitri01/Data-Analysis-on-Mobile-Price-Classification)
 
 ---
 
@@ -64,10 +64,11 @@ This project explored correlations in YouTube features and used NLP models for s
 
 **Lessons Learned:** Feature engineering and ensembles often provide stronger baselines than directly applying deep models.
 
-GitHub: https://github.com/maitri01/YouTube-Views-Prediction
+GitHub: [Repository](https://github.com/maitri01/YouTube-Views-Prediction)
 
 ---
 
 ### Closing Note
 
-More details and ongoing work are updated regularly on my GitHub profile: https://github.com/maitri01
+More details and ongoing work are updated regularly on my GitHub profile: [maitri01](https://github.com/maitri01)
+
