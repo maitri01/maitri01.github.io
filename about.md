@@ -4,8 +4,6 @@ layout: single
 permalink: /about/
 ---
 
-# About Me
-
 Hello, I’m **Maitri Vignesh Shah**.
 
 I am currently pursuing my **Master’s in Data Science & Artificial Intelligence** at *Universität des Saarlandes* and working as a **Research Assistant (HiWi) in the SprintML Lab at CISPA**. My work focuses on **Trustworthy Machine Learning**, where I help design the **technical frameworks, baseline models, and evaluation pipelines** for the *AI European Championship*. It’s an exciting space — part engineering, part research — and it keeps me at the edge of what’s possible with AI.
@@ -38,4 +36,3 @@ Outside of my coursework, I enjoy **mentoring and collaborating**. I’ve guided
 ### Looking Ahead
 
 I see myself growing at the intersection of **research and application**: building AI systems that are not only intelligent but also **trustworthy, efficient, and impactful**. Whether in academia, industry, or collaborative innovation, my goal is to contribute to solutions that genuinely make a difference.
-
