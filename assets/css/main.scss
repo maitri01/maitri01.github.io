@@ -107,8 +107,8 @@
 .page__content h2#selected-projects .header-link { display: none !important; }
 .page__content h2#selected-projects {
   border-bottom: 1px solid #51555d !important; /* match theme */
-  margin-bottom: 0.35rem; /* reduce gap above line */
-  padding-bottom: 0.15rem;
+  margin-bottom: 0.6rem;   /* similar spacing to other h2s */
+  padding-bottom: 0.3rem;
 }
 .page__content h2#selected-projects + .feature__wrapper {
   margin-top: 0.4rem;    /* reduce gap below line */
