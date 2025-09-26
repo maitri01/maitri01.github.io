@@ -95,6 +95,14 @@
   }
 }
 
+/* Remove divider under Selected Projects cards */
+.feature__wrapper > .feature__item:last-child .archive__item {
+  border-bottom: 0 !important;
+}
+.feature__wrapper {
+  margin-bottom: 0.5rem; /* tighten gap before next section */
+}
+
 /* Title-to-content spacing on inner pages (match homepage feel) */
 .layout--single .page__inner-wrap > header {
   margin-bottom: 0.5rem;

@@ -38,7 +38,7 @@ Previously, during my B.Tech in Artificial Intelligence at NMIMS University (Mum
 
 {% include feature_row id="home_projects" %}
 
-## Footer / Contact
+## Contact
 
 - 📧 <a href="mailto:maitriv2001@gmail.com">maitriv2001@gmail.com</a>
 - 🔗 <a href="https://www.linkedin.com/in/maitri-shah01" target="_blank" rel="noopener">LinkedIn</a>
