@@ -12,9 +12,7 @@ This page is a deeper dive into the projects I’ve worked on — going beyond w
 
 During my B.Tech capstone, I worked under the mentorship of Dr. Sharath Raghvendra to make Wasserstein Distance computation more practical for large datasets. The classic Hungarian algorithm worked but was slow — around 35 minutes for our input size. Through profiling and iterative improvements, I optimized the algorithm with a quad-tree structure, bringing the runtime down to **12 seconds (about 50× faster)**.
 
-**Lessons Learned:** Algorithmic thinking is just as important as coding — identifying bottlenecks gave bigger speedups than hardware.
-
-GitHub: https://github.com/maitri01
+**Lessons Learned:** Algorithmic thinking is just as important as coding - identifying bottlenecks gave bigger speedups than hardware.
 
 ---
 
