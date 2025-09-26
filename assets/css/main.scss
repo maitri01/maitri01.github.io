@@ -114,6 +114,11 @@
   margin-top: 0.4rem;    /* reduce gap below line */
   border-top: 0 !important;
 }
+
+/* Hide permalink icons on headings site‑wide (e.g., About page) */
+.page__content .header-link {
+  display: none !important;
+}
 /* Belt-and-suspenders: ensure no extra rule directly under Selected Projects */
 .page__content h2#selected-projects + .feature__wrapper,
 .page__content h2#selected-projects + .feature__wrapper * {
