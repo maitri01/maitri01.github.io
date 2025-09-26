@@ -10,6 +10,8 @@ header:
       url: "/cv/"
     - label: "Explore Projects"
       url: "/projects/"
+    - label: "About Me"
+      url: "/about/"
 excerpt: "M.Sc. Data Science & Artificial Intelligence, Universitat des Saarlandes<br/>Research Assistant (HiWi), SprintML Lab @ CISPA"
 home_projects:
   - title: "QuadTransport"
