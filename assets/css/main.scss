@@ -101,10 +101,6 @@
 .feature__wrapper + hr { display: none !important; }
 .feature__wrapper { margin-bottom: 0.25rem; }
 
-/* Remove any underline put on H2 headings (Selected Projects) */
-.page__content h2 { border-bottom: none !important; }
-.page__content h2 + .feature__wrapper { border-top: 0 !important; }
-
 /* Title-to-content spacing on inner pages (match homepage feel) */
 .layout--single .page__inner-wrap > header {
   margin-bottom: 0.5rem;
