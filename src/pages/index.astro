@@ -9,7 +9,7 @@ import heroImage from "../assets/image_bfc924.jpg";
   description="Research-driven implementation and evaluation of reliable AI systems."
 >
   <section class="grid gap-4 md:grid-cols-[1.45fr_0.75fr] md:items-start">
-    <article class="glass-card">
+    <article id="hero-text-card" class="glass-card">
       <h1 class="hero-title">Maitri Shah</h1>
       <p class="hero-sub text-xl leading-tight md:text-[2rem]">Research Assistant at CISPA SprintML Lab | M.Sc. Student at Universität des Saarlandes.</p>
       <p class="hero-body">
@@ -19,8 +19,10 @@ import heroImage from "../assets/image_bfc924.jpg";
       </p>
     </article>
 
-    <aside class="glass-card self-start border-cyanaccent/40 shadow-neon">
-      <Image src={heroImage} alt="Maitri Shah" class="aspect-square w-full rounded-xl object-cover" />
+    <aside id="hero-photo-card" class="glass-card self-start border-cyanaccent/40 shadow-neon">
+      <div class="h-full w-full overflow-hidden rounded-xl">
+        <Image src={heroImage} alt="Maitri Shah" class="h-full w-full object-cover" />
+      </div>
     </aside>
   </section>
 
@@ -36,13 +38,33 @@ import heroImage from "../assets/image_bfc924.jpg";
         <p class="copy">Co-leading tutorials and infrastructure setup for <span class="metric">100+ Master's students</span> in the Trustworthy ML course at Saarland University/CISPA.</p>
       </article>
       <article class="glass-card">
-        <p class="tag">Security Benchmark Development</p>
+        <p class="tag">AI Hackathon Championship Development</p>
         <p class="copy">Developing competition tasks and automated data/environment setup workflows for the European Cybersecurity & AI Hackathon Championship.</p>
       </article>
       <article class="glass-card">
         <p class="tag">Academic Excellence</p>
-        <p class="copy">National scholarship awarded by the German Federal Ministry of Education and Research to top-performing students based on academic excellence and potential. <strong>Deutschlandstipendium Scholarship holder, 2025.</strong></p>
+        <p class="copy"><strong>Deutschlandstipendium Scholarship holder, 2025.</strong> National scholarship awarded by the German Federal Ministry of Education and Research to top-performing students based on academic excellence and potential. </p>
       </article>
     </div>
   </section>
+
+  <script>
+    const syncHeroHeights = () => {
+      const textCard = document.getElementById("hero-text-card");
+      const photoCard = document.getElementById("hero-photo-card");
+      if (!textCard || !photoCard) return;
+
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        photoCard.style.height = `${textCard.offsetHeight}px`;
+      } else {
+        photoCard.style.height = "";
+      }
+    };
+
+    window.addEventListener("load", syncHeroHeights);
+    window.addEventListener("resize", syncHeroHeights);
+    if (document.fonts?.ready) {
+      document.fonts.ready.then(syncHeroHeights);
+    }
+  </script>
 </BaseLayout>
