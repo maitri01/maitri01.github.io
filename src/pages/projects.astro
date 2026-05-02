@@ -24,11 +24,43 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </ul>
 
     <p class="mt-4 font-bold">Task Development</p>
-    <ul class="list-clean">
-      <li><strong>Image Attribution:</strong> Verifying source architectures in generated media.</li>
-      <li><strong>Model Tracer:</strong> Investigating model provenance through output distribution shifts.</li>
-      <li><strong>Watermark Detection & Removal:</strong> Testing signal resilience against adversarial perturbations.</li>
-    </ul>
+    <div class="mt-4 grid gap-4 md:grid-cols-2">
+      <article class="rounded-xl border border-white/10 bg-white/5 p-4">
+        <p class="tag">Task 1</p>
+        <h3 class="project-title mt-1">Image Attribution</h3>
+        <p class="copy mt-2">OOD detection across VAR, RAR, Taming, and Stable Diffusion families with <span class="metric">TPR @ 1% FPR</span> as the reliability target.</p>
+      </article>
+      <article class="rounded-xl border border-white/10 bg-white/5 p-4">
+        <p class="tag">Task 2</p>
+        <h3 class="project-title mt-1">Model Tracer</h3>
+        <p class="copy mt-2">Version-level attribution from white-box signals including logits and likelihood traces across close model variants.</p>
+      </article>
+      <article class="rounded-xl border border-white/10 bg-white/5 p-4">
+        <p class="tag">Task 3</p>
+        <h3 class="project-title mt-1">Watermark Detection (Vision)</h3>
+        <p class="copy mt-2">Binary clean vs. watermarked separation with continuous detector scores calibrated for <span class="metric">1% FPR</span>.</p>
+      </article>
+      <article class="rounded-xl border border-white/10 bg-white/5 p-4">
+        <p class="tag">Task 4</p>
+        <h3 class="project-title mt-1">Watermark Removal (Vision)</h3>
+        <p class="copy mt-2">Attack evaluation balancing detectability reduction against image quality constraints using MSE-based utility checks.</p>
+      </article>
+      <article class="rounded-xl border border-white/10 bg-white/5 p-4">
+        <p class="tag">Task 5</p>
+        <h3 class="project-title mt-1">LLM Watermark Detection</h3>
+        <p class="copy mt-2">Statistical detection of biased green-list token distributions across multiple watermarking schemes.</p>
+      </article>
+      <article class="rounded-xl border border-white/10 bg-white/5 p-4">
+        <p class="tag">Task 6</p>
+        <h3 class="project-title mt-1">LLM Watermark Removal</h3>
+        <p class="copy mt-2">Robust scoring over detection evasion, token similarity (Levenshtein), and semantic similarity (cosine alignment).</p>
+      </article>
+      <article class="rounded-xl border border-white/10 bg-white/5 p-4 md:col-span-2">
+        <p class="tag">Task 7</p>
+        <h3 class="project-title mt-1">Framework Infrastructure</h3>
+        <p class="copy mt-2">Starter-kit and leaderboard automation for reproducible submissions, evaluation consistency, and faster participant onboarding.</p>
+      </article>
+    </div>
 
     <p class="mt-4 font-bold">Operational Role</p>
     <p class="copy">Provided <span class="metric">16+ hours</span> of live technical support during 24-hour hackathon windows, resolving coding and environment conflicts in real time.</p>
