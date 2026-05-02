@@ -14,7 +14,6 @@ A modular research portfolio built with Astro and Tailwind CSS.
 - `/` Impact Dashboard (bento grid)
 - `/research-experience/`
 - `/evaluation-suite/`
-- `/implementation-lab/`
 - `/cv-skills/`
 
 ## Local Development

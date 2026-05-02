@@ -5,101 +5,99 @@ import KatexBlock from "../components/KatexBlock.astro";
 
 <BaseLayout
   title="Evaluation Suite | Maitri Shah"
-  description="Terminal-style benchmark task explorer for trustworthy AI championship implementation."
+  description="Interactive championship-style terminal console for benchmark task and metric simulation."
 >
   <header>
-    <p class="bento-kicker">Page 3 | Evaluation Suite</p>
-    <h1 class="page-title">Trustworthy AI Championship Benchmarks</h1>
+    <p class="bento-kicker">Evaluation Suite</p>
+    <h1 class="page-title">Championship Benchmark Implementation</h1>
     <p class="page-subtitle">
-      Developed as part of a team implementation of attribution and tracing tasks, and contributed to participant onboarding with Jülich cluster automation and live support.
+      Contributed to task implementation for the European trustworthy AI championship and developed as part of a team
+      secure participant operations with Jülich HPC automation.
     </p>
   </header>
 
   <section class="section glass-card">
-    <h2>Task Implementation</h2>
+    <h2>Task and Metric Framework</h2>
     <ul class="clean">
-      <li>Contributed to five core tasks: Image Attribution, Model Tracer, and watermark removal and detection for vision and LLM tracks.</li>
-      <li>Developed as part of a team security-first scoring with <span class="metric">TPR @ 1% FPR</span>.</li>
+      <li>Contributed to implementation of Image Attribution, Model Tracer, and watermark detection and removal tasks across vision and LLM tracks.</li>
+      <li>Developed as part of a team the shared security metric standard <span class="metric metric-purple">TPR @ 1% FPR</span>.</li>
     </ul>
     <KatexBlock expression={'\\operatorname{TPR}@1\\%\\operatorname{FPR}=\\frac{\\operatorname{TP}(\\tau_{0.01})}{\\operatorname{P}}'} />
   </section>
 
   <section class="section glass-card">
-    <h2>Terminal Task List</h2>
+    <h2>Simulated Security Console</h2>
     <div class="task-grid">
       <article class="meta-card">
-        <p class="bento-kicker">Model Tracer</p>
-        <p>Contributed to provenance tracing under constrained false-positive budgets.</p>
-        <button class="cli-btn" type="button" data-cli="model-tracer">Run CLI</button>
+        <p class="bento-kicker">Command: run model-tracer</p>
+        <p>Contributed to lineage and attribution diagnostics under strict false-positive constraints.</p>
+        <button class="cli-btn" type="button" data-cmd="run model-tracer">Run</button>
       </article>
       <article class="meta-card">
-        <p class="bento-kicker">Image Attribution</p>
-        <p>Developed as part of a team attribution checks for generated and transformed image distributions.</p>
-        <button class="cli-btn" type="button" data-cli="image-attribution">Run CLI</button>
-      </article>
-      <article class="meta-card">
-        <p class="bento-kicker">Watermark Detection</p>
-        <p>Contributed to detection baselines and robustness validation under output perturbations.</p>
-        <button class="cli-btn" type="button" data-cli="watermark-detection">Run CLI</button>
+        <p class="bento-kicker">Command: eval --metric</p>
+        <p>Developed as part of a team metric reporting centered on TPR @ 1% FPR across participant submissions.</p>
+        <button class="cli-btn" type="button" data-cmd="eval --metric">Run</button>
       </article>
     </div>
 
     <div class="terminal" aria-live="polite">
-      <div class="terminal-head">championship@trust-ai:~$ task --describe</div>
-      <pre id="terminal-output" class="terminal-body">Select a task using the CLI buttons above.</pre>
+      <div class="terminal-head">
+        <span class="light red"></span>
+        <span class="light yellow"></span>
+        <span class="light green"></span>
+        <span class="terminal-title">trust-ai console</span>
+      </div>
+      <pre id="terminal-output" class="terminal-body">$ help
+Use commands: run model-tracer | eval --metric</pre>
     </div>
   </section>
 
   <hr class="soft" />
 
   <section class="section glass-card">
-    <h2>Participant Support & Infrastructure</h2>
+    <h2>Infrastructure and Support</h2>
     <ul class="clean">
-      <li>Developed as part of a team Jülich HPC automation scripts for environment setup and secure dataset access.</li>
-      <li>Contributed to 24-hour troubleshooting during hackathon windows for coding failures and cluster access issues.</li>
+      <li>Developed as part of a team Jülich HPC automation scripts for environment provisioning and dataset access for <span class="metric metric-amber">200+</span> participants.</li>
+      <li>Contributed to 24-hour technical support windows for coding issues and cluster access troubleshooting during hackathon sessions.</li>
     </ul>
   </section>
 
   <script>
-    const taskMap = {
-      "model-tracer": [
-        "$ task run model-tracer",
-        "> objective: trace model lineage across altered checkpoints",
-        "> evaluation: TPR @ 1% FPR",
-        "> note: prioritize stability under out-of-distribution probes"
-      ],
-      "image-attribution": [
-        "$ task run image-attribution",
-        "> objective: attribute outputs to source model families",
-        "> evaluation: TPR @ 1% FPR",
-        "> note: calibrate threshold for heavy-tailed error modes"
-      ],
-      "watermark-detection": [
-        "$ task run watermark-detection",
-        "> objective: detect embedded marks after transformation",
-        "> evaluation: TPR @ 1% FPR",
-        "> note: verify persistence across adversarial edits"
-      ]
-    };
-
     const output = document.getElementById("terminal-output");
-    const buttons = document.querySelectorAll("[data-cli]");
+    const cmdButtons = document.querySelectorAll("[data-cmd]");
 
-    const typeLines = async (lines) => {
+    const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+    const typeText = async (text) => {
       output.textContent = "";
-      for (const line of lines) {
-        for (const char of line) {
-          output.textContent += char;
-          await new Promise((resolve) => setTimeout(resolve, 12));
-        }
-        output.textContent += "\n";
+      for (const ch of text) {
+        output.textContent += ch;
+        await sleep(8);
       }
     };
 
-    buttons.forEach((button) => {
+    const runModelTracer = async () => {
+      await typeText("$ run model-tracer\n[scan] loading challenge checkpoint...\n[scan] computing signatures...");
+      await sleep(280);
+      output.textContent += "\n[result] rar-xxl detected (Conf: 0.96)\n[metric] TPR @ 1% FPR = 0.78";
+    };
+
+    const runEvalMetric = async () => {
+      const chart = [
+        "$ eval --metric",
+        "TPR @ 1% FPR",
+        "candidate-A | #######..... 0.74",
+        "candidate-B | #########... 0.81",
+        "candidate-C | ##########.. 0.86"
+      ].join("\n");
+      await typeText(chart);
+    };
+
+    cmdButtons.forEach((button) => {
       button.addEventListener("click", async () => {
-        const key = button.dataset.cli;
-        await typeLines(taskMap[key] || ["No task description available."]);
+        const cmd = button.dataset.cmd;
+        if (cmd === "run model-tracer") await runModelTracer();
+        if (cmd === "eval --metric") await runEvalMetric();
       });
     });
   </script>

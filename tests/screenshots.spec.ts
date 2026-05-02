@@ -6,8 +6,7 @@ const routes = [
   { url: "/", file: "01-home-dashboard.png" },
   { url: "/research-experience/", file: "02-research-experience.png" },
   { url: "/evaluation-suite/", file: "03-evaluation-suite.png" },
-  { url: "/implementation-lab/", file: "04-implementation-lab.png" },
-  { url: "/cv-skills/", file: "05-cv-skills.png" }
+  { url: "/cv-skills/", file: "04-cv-skills.png" }
 ];
 
 test("capture living previews", async ({ page }) => {
@@ -18,9 +17,6 @@ test("capture living previews", async ({ page }) => {
 
   for (const route of routes) {
     await page.goto(route.url, { waitUntil: "networkidle" });
-    await page.screenshot({
-      path: path.join(outDir, route.file),
-      fullPage: true
-    });
+    await page.screenshot({ path: path.join(outDir, route.file), fullPage: true });
   }
 });

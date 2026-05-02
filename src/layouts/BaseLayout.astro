@@ -9,7 +9,6 @@ const nav = [
   { href: "/", label: "Home" },
   { href: "/research-experience/", label: "Research & Experience" },
   { href: "/evaluation-suite/", label: "Evaluation Suite" },
-  { href: "/implementation-lab/", label: "Implementation Lab" },
   { href: "/cv-skills/", label: "CV/Skills" }
 ];
 ---
@@ -29,13 +28,24 @@ const nav = [
     <title>{title}</title>
   </head>
   <body>
+    <nav id="glass-nav" class="top-nav" aria-label="Primary">
+      {nav.map((item) => (
+        <a href={item.href} data-active={path === item.href}>{item.label}</a>
+      ))}
+    </nav>
+
     <main class="layout-shell">
-      <nav class="top-nav" aria-label="Primary">
-        {nav.map((item) => (
-          <a href={item.href} data-active={path === item.href}>{item.label}</a>
-        ))}
-      </nav>
       <slot />
     </main>
+
+    <script>
+      const nav = document.getElementById("glass-nav");
+      const onScroll = () => {
+        if (!nav) return;
+        nav.classList.toggle("nav-shrink", window.scrollY > 20);
+      };
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+    </script>
   </body>
 </html>

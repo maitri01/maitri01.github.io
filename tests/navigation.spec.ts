@@ -1,12 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-const pages = [
-  "/",
-  "/research-experience/",
-  "/evaluation-suite/",
-  "/implementation-lab/",
-  "/cv-skills/"
-];
+const pages = ["/", "/research-experience/", "/evaluation-suite/", "/cv-skills/"];
 
 test("primary navigation pages render", async ({ page }) => {
   for (const route of pages) {
@@ -16,7 +10,7 @@ test("primary navigation pages render", async ({ page }) => {
   }
 });
 
-test("katex blocks render and bento cards support hover state", async ({ page }) => {
+test("katex and bento hover effects are visible", async ({ page }) => {
   await page.goto("/research-experience/");
   await expect(page.locator(".katex").first()).toBeVisible();
 
@@ -26,7 +20,7 @@ test("katex blocks render and bento cards support hover state", async ({ page })
 
   const beforeHover = await card.evaluate((el) => getComputedStyle(el).borderColor);
   await card.hover();
-  await page.waitForTimeout(250);
+  await page.waitForTimeout(200);
   const afterHover = await card.evaluate((el) => getComputedStyle(el).borderColor);
 
   expect(afterHover).not.toBe(beforeHover);

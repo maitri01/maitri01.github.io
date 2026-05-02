@@ -5,41 +5,68 @@ import KatexBlock from "../components/KatexBlock.astro";
 
 <BaseLayout
   title="Research & Experience | Maitri Shah"
-  description="Multi-hop radioactivity timeline and research pipeline contributions at CISPA SprintML."
+  description="CISPA research contributions, implementation highlights, and teaching leadership."
 >
   <header>
-    <p class="bento-kicker">Page 2 | Research & Experience</p>
-    <h1 class="page-title">Collaborative Research Pipeline</h1>
+    <p class="bento-kicker">Research & Experience</p>
+    <h1 class="page-title">Collaborative Research and Implementation Contributions</h1>
     <p class="page-subtitle">
-      Contributed to watermark radioactivity analysis, integrated the <span class="metric">SANA 0.6B</span> backend,
-      and developed as part of a team teaching materials for secure ML methods.
+      Contributed to watermark radioactivity analysis for ICML 2026, developed as part of a team the SANA 0.6B backend integration,
+      and supported practical secure-ML delivery for Master's cohorts.
     </p>
   </header>
 
   <section class="section glass-card">
-    <h2>Research Assistant | CISPA SprintML Lab</h2>
+    <h2>CISPA SprintML Lab | Watermark Radioactivity</h2>
     <ul class="clean">
-      <li>Contributed to evaluation of <span class="metric">Infinity-2B</span> and <span class="metric">SD2.1</span> across multi-hop fine-tuning.</li>
-      <li>Developed as part of a team the backend integration of <span class="metric">SANA 0.6B</span> into a shared research pipeline.</li>
-      <li>Contributed to Welch t-test based persistence analysis under supervised and unsupervised settings.</li>
+      <li>Contributed to multi-hop persistence studies on <span class="metric metric-blue">SD2.1</span> and <span class="metric metric-blue">Infinity-2B</span>.</li>
+      <li>Developed as part of a team backend expansion by integrating <span class="metric metric-blue">SANA 0.6B</span>.</li>
+      <li>Contributed to significance analysis using Welch t-tests for supervised and unsupervised detection settings.</li>
     </ul>
 
-    <KatexBlock expression={'t = \\frac{\\bar{x}_1 - \\bar{x}_2}{\\sqrt{\\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2}}},\\quad p < 0.05 \\Rightarrow \\text{detectable persistence}'} />
-
     <div class="timeline-wrap">
-      <p class="bento-kicker">Infinity-2B Multi-Hop Timeline</p>
-      <div class="timeline-nodes" role="tablist" aria-label="Hop timeline">
+      <p class="bento-kicker">Interactive Hop Timeline</p>
+      <svg class="timeline-path" viewBox="0 0 420 80" width="100%" height="80" aria-label="Hop timeline path">
+        <path d="M24 44 C114 44, 168 22, 256 26 C312 29, 350 38, 396 42" stroke="rgba(0,242,255,0.65)" stroke-width="3" fill="none" />
+        <circle cx="114" cy="36" r="7" fill="#00f2ff" opacity="0.85" />
+        <circle cx="292" cy="30" r="7" fill="#8f5bff" opacity="0.85" />
+      </svg>
+
+      <div class="timeline-nodes" role="tablist" aria-label="Hop nodes">
         <button class="timeline-node active" data-hop="1" type="button">Hop 1</button>
         <button class="timeline-node" data-hop="2" type="button">Hop 2</button>
       </div>
+
       <article class="meta-card">
-        <p id="hop-title" class="metric">Hop 1 | Early Persistence</p>
+        <p id="hop-title" class="metric metric-blue">Hop 1 | Early persistence in Infinity-2B</p>
         <p id="hop-stats">p-value: 0.012 | ROC AUC: 0.89 | TPR @ 1% FPR: 0.74</p>
-        <svg id="hop-roc" viewBox="0 0 220 120" width="100%" height="120" aria-label="ROC Curve">
-          <line x1="16" y1="104" x2="206" y2="104" stroke="rgba(255,255,255,0.22)" />
-          <line x1="16" y1="104" x2="16" y2="12" stroke="rgba(255,255,255,0.22)" />
-          <path id="roc-path" d="M16 104 C45 80, 62 56, 106 36 C145 22, 172 17, 206 14" stroke="#00f2ff" stroke-width="3" fill="none" />
-        </svg>
+      </article>
+    </div>
+
+    <div class="code-console">
+      <p class="bento-kicker">Math Console | Welch t-test</p>
+      <KatexBlock expression={'t = \\frac{\\bar{x}_1 - \\bar{x}_2}{\\sqrt{\\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2}}},\\quad p < 0.05 \\Rightarrow \\text{signal persistence detected}'} />
+    </div>
+  </section>
+
+  <hr class="soft" />
+
+  <section class="section">
+    <h2>Implementation Highlights</h2>
+    <div class="highlight-grid">
+      <article class="meta-card">
+        <p class="bento-kicker">LLM Unlearning | OLMo-2</p>
+        <p>
+          Contributed to GA+KL-based unlearning evaluation and developed as part of a team a strong privacy-utility point at
+          <span class="metric metric-purple">MIA AUROC 0.529</span> while preserving usable retention quality.
+        </p>
+      </article>
+      <article class="meta-card">
+        <p class="bento-kicker">QuadTransport | Java Optimization</p>
+        <p>
+          Contributed to quad-tree redesign of Hungarian-style matching and developed as part of a team
+          <span class="metric metric-amber">~50x runtime reduction</span> from 35 minutes to 12 seconds.
+        </p>
       </article>
     </div>
   </section>
@@ -49,42 +76,40 @@ import KatexBlock from "../components/KatexBlock.astro";
   <section class="section glass-card">
     <h2>Pedagogical Leadership</h2>
     <ul class="clean">
-      <li>Developed as part of a team tutorials for <span class="metric">50+ Master’s students</span> on clusters and baseline adversarial methods.</li>
-      <li>Contributed to assignment design on Membership Inference Attacks and adversarial robustness.</li>
+      <li>Developed as part of a team tutorials for <span class="metric metric-amber">50+ Master's students</span> on cluster setup and baseline adversarial methods.</li>
+      <li>Contributed to assignment design and hands-on Python implementation support for Membership Inference Attacks and robustness tasks.</li>
     </ul>
   </section>
 
   <script>
-    const data = {
+    const hopData = {
       1: {
-        title: "Hop 1 | Early Persistence",
-        stats: "p-value: 0.012 | ROC AUC: 0.89 | TPR @ 1% FPR: 0.74",
-        path: "M16 104 C45 80, 62 56, 106 36 C145 22, 172 17, 206 14"
+        title: "Hop 1 | Early persistence in Infinity-2B",
+        stats: "p-value: 0.012 | ROC AUC: 0.89 | TPR @ 1% FPR: 0.74"
       },
       2: {
-        title: "Hop 2 | Partial Decay",
-        stats: "p-value: 0.041 | ROC AUC: 0.81 | TPR @ 1% FPR: 0.63",
-        path: "M16 104 C40 90, 63 72, 105 52 C144 35, 171 28, 206 24"
+        title: "Hop 2 | Partial decay after transfer",
+        stats: "p-value: 0.041 | ROC AUC: 0.81 | TPR @ 1% FPR: 0.63"
       }
     };
 
-    const buttons = document.querySelectorAll(".timeline-node");
-    const title = document.getElementById("hop-title");
-    const stats = document.getElementById("hop-stats");
-    const path = document.getElementById("roc-path");
+    const hopButtons = document.querySelectorAll(".timeline-node");
+    const hopTitle = document.getElementById("hop-title");
+    const hopStats = document.getElementById("hop-stats");
 
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const hop = button.dataset.hop;
-        const row = data[hop];
+    hopButtons.forEach((btn) => {
+      const activate = () => {
+        const key = btn.dataset.hop;
+        const row = hopData[key];
+        hopButtons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        hopTitle.textContent = row.title;
+        hopStats.textContent = row.stats;
+      };
 
-        buttons.forEach((b) => b.classList.remove("active"));
-        button.classList.add("active");
-
-        title.textContent = row.title;
-        stats.textContent = row.stats;
-        path.setAttribute("d", row.path);
-      });
+      btn.addEventListener("mouseenter", activate);
+      btn.addEventListener("focus", activate);
+      btn.addEventListener("click", activate);
     });
   </script>
 </BaseLayout>

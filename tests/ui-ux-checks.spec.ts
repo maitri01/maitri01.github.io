@@ -1,14 +1,14 @@
 import { test, expect } from "@playwright/test";
 
-test("Interactive Dashboard & Slider Verification", async ({ page }) => {
-  await page.goto("/");
-  await expect(page.locator("text=200+ Participants")).toBeVisible();
+test("timeline nodes and terminal commands are interactive", async ({ page }) => {
+  await page.goto("/research-experience/");
+  await page.hover("button[data-hop='2']");
+  await expect(page.locator("#hop-stats")).toContainText("p-value: 0.041");
 
-  await page.goto("/implementation-lab/");
-  const slider = page.locator("input[type='range']");
-  await slider.fill("100");
-  await expect(page.locator("#auroc")).toHaveText("0.529");
+  await page.goto("/evaluation-suite/");
+  await page.click("button[data-cmd='run model-tracer']");
+  await expect(page.locator("#terminal-output")).toContainText("rar-xxl detected (Conf: 0.96)");
 
-  const mathBlock = page.locator(".katex").first();
-  await expect(mathBlock).toBeVisible();
+  await page.click("button[data-cmd='eval --metric']");
+  await expect(page.locator("#terminal-output")).toContainText("TPR @ 1% FPR");
 });
