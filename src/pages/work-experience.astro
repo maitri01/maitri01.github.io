@@ -8,7 +8,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 >
   <header class="glass-card">
     <h1 class="hero-title">Work Experience</h1>
-    <p class="hero-body">Project-specific contributions focused on implementation reliability, infrastructure stability, and collaborative research delivery.</p>
+    <p class="hero-body">Detailed implementation contributions sourced from Section I of the Technical Deep Dive.</p>
   </header>
 
   <section class="mt-8 glass-card">
@@ -17,21 +17,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <h3 class="project-title mt-5">Project: Watermark Radioactivity (NeurIPS 2026 Submission)</h3>
     <p class="copy">Investigating radioactive data: how watermark signals persist or decay when generative models are trained recursively on their own outputs.</p>
 
-    <p class="mt-4 font-bold">Implementation & Contributions</p>
+    <p class="mt-4 font-bold">My Contributions</p>
     <ul class="list-clean">
-      <li><strong>Manual Evaluation:</strong> Conducted foundational manual evaluation of <span class="metric">Infinity-2B</span> before the automated pipeline existed.</li>
-      <li><strong>Backend Integration:</strong> Integrated the <span class="metric">SANA 0.6B</span> backend into the unified lab pipeline for comparative signal tracking.</li>
-      <li><strong>Statistical Refinement:</strong> Contributed to transition from P-values to <span class="metric">E-values</span> to overcome instability in black-box detection.</li>
-      <li><strong>Refactoring:</strong> Refactored detection code to fix compatibility issues and stabilize multi-GPU execution.</li>
+      <li><strong>Technical Implementation:</strong> Integrated high-resolution generative backends, including <span class="metric">SANA 0.6B</span> and <span class="metric">Infinity-2B</span>, into a unified cross-architecture evaluation pipeline.</li>
+      <li><strong>Manual Evaluation:</strong> Performed foundational manual assessments of Infinity-2B to establish radioactivity baselines before the automated pipeline was operational.</li>
+      <li><strong>Statistical Innovation:</strong> Facilitated the transition from unstable P-values to <span class="metric">E-values</span>, providing non-asymptotic guarantees for black-box provenance detection.</li>
+      <li><strong>Refactoring:</strong> Refactored detection implementations to resolve compatibility issues and improve stability across multi-GPU workflows.</li>
+      <li><strong>Knowledge Base:</strong> Worked directly with StegaStamp, TrustMark, RivaGAN, and BitMark watermarking schemes during resilience testing.</li>
     </ul>
 
-    <p class="mt-4 font-bold">Learnings</p>
-    <p class="copy">Developed implementation-level understanding of StegaStamp, TrustMark, RivaGAN, and BitMark watermarking schemes.</p>
+    <p class="mt-4 font-bold">Key Learning</p>
+    <p class="copy">I learned how to manage distribution shifts in iterative training loops and why non-asymptotic metrics (E-values) are essential for reliable security claims in black-box scenarios.</p>
 
-    <h3 class="project-title mt-7">Project: QuadTransport</h3>
-    <p class="copy"><strong>Role:</strong> Research Assistant focusing on performance engineering.</p>
-    <p class="copy"><strong>Contribution:</strong> Redesigned Hungarian-algorithm-based Wasserstein distance computation using Quad-tree partitioning in Java.</p>
-    <p class="copy"><strong>Outcome:</strong> Achieved <span class="metric">50x runtime reduction</span> from 35 minutes to 12 seconds for targeted workloads.</p>
   </section>
 
   <section class="mt-8 glass-card">
@@ -40,11 +37,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     <p class="mt-4 font-bold">My Contributions</p>
     <ul class="list-clean">
-      <li><strong>Tutorial Leadership:</strong> Leading sessions on assignment methodology and strategic approaches for complex security tasks.</li>
-      <li><strong>Cluster Management:</strong> Managing GPU cluster setup and troubleshooting to keep student model execution stable.</li>
-      <li><strong>Course Development:</strong> Co-developing assignments and supporting grading workflows for projects and examinations.</li>
+      <li><strong>Co-leading Tutorials:</strong> Designed and conducted technical walkthroughs on assignment logic and adversarial attack methodology.</li>
+      <li><strong>Managing GPU Cluster Setup:</strong> Managed cluster setup and SLURM troubleshooting for large-scale student assignments.</li>
+      <li><strong>Co-developing Assignments:</strong> Contributed course materials and evaluation criteria for exams and practical projects.</li>
     </ul>
 
-    <p class="copy"><strong>Professional Growth:</strong> Refined problem-solving and communication by mentoring students through implementation hurdles.</p>
+    <p class="mt-4 font-bold">Key Learning</p>
+    <p class="copy">I developed the ability to translate complex research concepts into actionable engineering steps for others and learned to manage the technical infrastructure required for large-scale AI education.</p>
+  </section>
+
+  <section class="mt-8 glass-card">
+    <h2 class="section-title">Research Assistant (B.Tech) | QuadTransport</h2>
+    <p class="copy"><strong>Optimization:</strong> Redesigned a Java-based Wasserstein distance computation using Quad-tree partitioning.</p>
+    <p class="copy"><strong>Impact:</strong> Achieved <span class="metric">50x runtime reduction</span>, reducing execution from 35 minutes to 12 seconds.</p>
+    <p class="copy"><strong>Key Learning:</strong> Deepened understanding of algorithmic efficiency and how spatial partitioning can reduce the complexity of high-dimensional distance calculations.</p>
   </section>
 </BaseLayout>

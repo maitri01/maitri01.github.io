@@ -8,7 +8,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 >
   <header class="glass-card">
     <h1 class="hero-title">Projects</h1>
-    <p class="hero-body">Engineering projects where reliability, adversarial robustness, and real-world operations mattered.</p>
+    <p class="hero-body">Competition and research suite details sourced from Sections II and III of the Technical Deep Dive.</p>
   </header>
 
   <section class="mt-8 glass-card">
@@ -28,37 +28,55 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <article class="rounded-xl border border-white/10 bg-white/5 p-4">
         <p class="tag">Task 1</p>
         <h3 class="project-title mt-1">Image Attribution</h3>
-        <p class="copy mt-2">OOD detection across VAR, RAR, Taming, and Stable Diffusion families with <span class="metric">TPR @ 1% FPR</span> as the reliability target.</p>
+        <p class="copy mt-2"><strong>Task:</strong> Classify generated images from VAR-16d, RAR-XL, Taming-cIN, Stable Diffusion, or as OOD.</p>
+        <p class="copy"><strong>Metric:</strong> Macro score weighted by <span class="metric">TPR @ 1% FPR</span>.</p>
+        <p class="copy"><strong>My Contribution:</strong> Developed OOD detection logic and synthetic data generators for RAR/VAR labeled training sets.</p>
+        <p class="copy"><strong>Key Learning:</strong> Calibrating models for extremely low false-positive rates under synthetic-to-real distribution gaps.</p>
       </article>
       <article class="rounded-xl border border-white/10 bg-white/5 p-4">
         <p class="tag">Task 2</p>
         <h3 class="project-title mt-1">Model Tracer</h3>
-        <p class="copy mt-2">Version-level attribution from white-box signals including logits and likelihood traces across close model variants.</p>
+        <p class="copy mt-2"><strong>Task:</strong> Identify architecture variants (for example VAR-d16 vs VAR-d30) from model-level signals.</p>
+        <p class="copy"><strong>Challenge:</strong> Separate nearly identical model families using token probabilities, likelihoods, and loss values.</p>
+        <p class="copy"><strong>My Contribution:</strong> Engineered white-box access scripts for VAR/RAR generation exposing internal traces beyond pixel outputs.</p>
+        <p class="copy"><strong>Key Learning:</strong> Internal activations and token-level likelihoods are more reliable attribution fingerprints than raw visuals.</p>
       </article>
       <article class="rounded-xl border border-white/10 bg-white/5 p-4">
         <p class="tag">Task 3</p>
         <h3 class="project-title mt-1">Watermark Detection (Vision)</h3>
-        <p class="copy mt-2">Binary clean vs. watermarked separation with continuous detector scores calibrated for <span class="metric">1% FPR</span>.</p>
+        <p class="copy mt-2"><strong>Task:</strong> Binary classification of clean vs watermarked images across multiple embedding schemes.</p>
+        <p class="copy"><strong>Implementation:</strong> Built a detector with continuous prediction scores in [0,1], evaluated at <span class="metric">1% FPR</span>.</p>
+        <p class="copy"><strong>Key Learning:</strong> Different schemes (including BitMark and Tree-Rings) leave distinct statistical markers even when signals are visually invisible.</p>
       </article>
       <article class="rounded-xl border border-white/10 bg-white/5 p-4">
         <p class="tag">Task 4</p>
         <h3 class="project-title mt-1">Watermark Removal (Vision)</h3>
-        <p class="copy mt-2">Attack evaluation balancing detectability reduction against image quality constraints using MSE-based utility checks.</p>
+        <p class="copy mt-2"><strong>Task:</strong> Adversarially disrupt watermark signals while preserving image utility.</p>
+        <p class="copy"><strong>Metric:</strong> Combined score over watermark detectability (TPR) and image fidelity (MSE).</p>
+        <p class="copy"><strong>My Contribution:</strong> Designed baseline attack scripts and an ImageQualityScore mapping from interpolated MSE values.</p>
+        <p class="copy"><strong>Key Learning:</strong> Signal-removal strength and visual utility form a direct optimization trade-off.</p>
       </article>
       <article class="rounded-xl border border-white/10 bg-white/5 p-4">
         <p class="tag">Task 5</p>
         <h3 class="project-title mt-1">LLM Watermark Detection</h3>
-        <p class="copy mt-2">Statistical detection of biased green-list token distributions across multiple watermarking schemes.</p>
+        <p class="copy mt-2"><strong>Task:</strong> Detect whether text was generated under watermarked token distributions.</p>
+        <p class="copy"><strong>Challenge:</strong> Generalize across schemes such as Kirchenbauer-style and semantic-invariant methods.</p>
+        <p class="copy"><strong>Implementation:</strong> Created evaluation pipeline with <span class="metric">TPR @ 1% FPR</span> as the primary robustness metric.</p>
+        <p class="copy"><strong>Key Learning:</strong> Green-list/red-list token biasing can be surfaced through statistical z-score anomalies.</p>
       </article>
       <article class="rounded-xl border border-white/10 bg-white/5 p-4">
         <p class="tag">Task 6</p>
         <h3 class="project-title mt-1">LLM Watermark Removal</h3>
-        <p class="copy mt-2">Robust scoring over detection evasion, token similarity (Levenshtein), and semantic similarity (cosine alignment).</p>
+        <p class="copy mt-2"><strong>Task:</strong> Modify watermarked text to evade detection while preserving semantic meaning and structure.</p>
+        <p class="copy"><strong>Metric:</strong> Product score over detection evasion, token similarity (Levenshtein), and semantic similarity (Cosine).</p>
+        <p class="copy"><strong>My Contribution:</strong> Developed combined evaluation scoring to prevent trivial paraphrase-only or random-string submissions.</p>
+        <p class="copy"><strong>Key Learning:</strong> Removing probability-level watermark signals while preserving semantics is mathematically difficult.</p>
       </article>
       <article class="rounded-xl border border-white/10 bg-white/5 p-4 md:col-span-2">
         <p class="tag">Task 7</p>
-        <h3 class="project-title mt-1">Framework Infrastructure</h3>
-        <p class="copy mt-2">Starter-kit and leaderboard automation for reproducible submissions, evaluation consistency, and faster participant onboarding.</p>
+        <h3 class="project-title mt-1">Infrastructure & Automation</h3>
+        <p class="copy mt-2"><strong>Onboarding Scripts:</strong> Developed Python/Shell automation for 200+ participants covering HuggingFace dataset pulls, environment setup, and cluster path configuration after login.</p>
+        <p class="copy"><strong>Key Learning:</strong> Developer Experience directly determines stability during high-pressure technical competitions.</p>
       </article>
     </div>
 
@@ -68,11 +86,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   <section class="mt-8 glass-card">
     <h2 class="section-title">LLM Unlearning (Trustworthy ML Seminar Project)</h2>
-    <p class="copy">Evaluated GA+KL, Sequential GA, and SPUL to remove memorized training data from the OLMo-2 model.</p>
-    <p class="copy">Implemented a KL divergence-based loss term to balance utility and privacy.</p>
-    <p class="copy">
-      Achieved <span class="metric">MIA AUROC of 0.529</span> in specific evaluations while documenting the real trade-off:
-      preventing utility degradation remains a core limitation of current unlearning methods.
-    </p>
+    <p class="copy">Seminar project at CISPA on privacy-preserving unlearning for OLMo-2 autoregressive models.</p>
+    <p class="copy"><strong>Methodology:</strong> Evaluated Gradient Ascent (GA), GA with KL-divergence (GA+KL), and Sequential GA.</p>
+    <p class="copy"><strong>Outcome:</strong> Achieved near-ideal <span class="metric">MIA AUROC of 0.529</span> in targeted evaluations.</p>
+    <p class="copy"><strong>Reality Check:</strong> Forgetting effectiveness often came with utility loss, highlighting a practical limitation for current unlearning pipelines.</p>
+    <p class="copy"><strong>Key Learning:</strong> Balancing adversarial forgetting objectives against utility constraints remains fragile in fine-tuned privacy-preserving systems.</p>
   </section>
 </BaseLayout>

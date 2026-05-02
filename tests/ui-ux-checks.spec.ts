@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test("required content fidelity blocks render", async ({ page }) => {
   await page.goto("/work-experience/");
   await expect(page.locator("text=Watermark Radioactivity")).toBeVisible();
-  await expect(page.locator("text=E-values")).toBeVisible();
+  await expect(page.locator("text=E-values").first()).toBeVisible();
 
   await page.goto("/projects/");
   await expect(page.locator("text=European Cybersecurity & AI Hackathon Championship")).toBeVisible();
