@@ -3,143 +3,39 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="Maitri Shah | Impact Dashboard"
-  description="High-signal dashboard for collaborative trustworthy AI research and implementation impact."
+  title="Maitri Shah | Home"
+  description="Research-driven implementation and evaluation of reliable AI systems."
 >
   <header class="hero-grid">
-    <div class="glass-card">
-      <p class="bento-kicker">Impact Dashboard</p>
+    <section class="card">
+      <p class="kicker">Home</p>
       <h1 class="page-title">Maitri Shah | Research-driven implementation and evaluation of reliable AI systems.</h1>
       <p class="page-subtitle">
-        M.Sc. student at Universität des Saarlandes and Research Assistant at CISPA SprintML Lab.
-        Contributed to collaborative research and developed as part of a team secure evaluation pipelines for high-stakes AI benchmarks.
+        I am a researcher and developer focused on the intersection of generative AI and security. I specialize in building the
+        frameworks that evaluate model reliability and the infrastructure that supports large-scale technical competitions.
       </p>
-    </div>
+    </section>
 
     <figure class="hero-photo">
-      <img src="/assets/images/profile.jpg" alt="Maitri Shah" loading="eager" />
+      <img src="/assets/images/image_bfc924.jpg" alt="Maitri Shah" loading="eager" />
     </figure>
   </header>
 
-  <section class="bento" aria-label="Metric Tiles">
-    <article class="bento-card metric-a" data-bento-card>
-      <p class="bento-kicker">Pan-European Scale</p>
-      <h2 class="bento-title">Championship Reach</h2>
-      <p class="bento-body">
-        <span class="metric-counter metric-blue" data-counter="200" data-format="plus">0</span>
-        contributed participants across seven venues.
-      </p>
-    </article>
-
-    <article class="bento-card metric-b" data-bento-card>
-      <p class="bento-kicker">Research Program</p>
-      <h2 class="bento-title">Watermark Radioactivity</h2>
-      <p class="bento-body">
-        <span class="metric-counter metric-blue" data-counter="2026" data-format="int">0</span>
-        ICML track focus in SD2.1 and Infinity-2B.
-      </p>
-    </article>
-
-    <article class="bento-card metric-c" data-bento-card>
-      <p class="bento-kicker">Safety Metric</p>
-      <h2 class="bento-title">OLMo-2 Unlearning</h2>
-      <p class="bento-body">
-        <span class="metric-counter metric-purple" data-counter="529" data-format="auroc">0.000</span>
-        MIA AUROC under GA+KL.
-      </p>
-    </article>
-
-    <article class="bento-card metric-d" data-bento-card>
-      <p class="bento-kicker">Academic Signal</p>
-      <h2 class="bento-title">Deutschlandstipendium + Optimization</h2>
-      <p class="bento-body">
-        <span class="metric-counter metric-amber" data-counter="395" data-format="cgpa">0.00</span>
-        CGPA and <span class="metric-counter metric-amber" data-counter="50" data-format="x">0x</span> runtime speedup record.
-      </p>
-    </article>
-  </section>
-
   <section class="section">
-    <h2>Deep-Dive Modules</h2>
-    <div class="module-grid">
-      <a class="module-link" href="/research-experience/">
-        <article class="meta-card">
-          <p class="bento-kicker">Research & Experience</p>
-          <p>CISPA research role, hop timeline, Welch t-test console, and implementation highlights.</p>
-        </article>
-      </a>
-      <a class="module-link" href="/evaluation-suite/">
-        <article class="meta-card">
-          <p class="bento-kicker">Evaluation Suite</p>
-          <p>Terminal-style task simulation for model tracing, attribution, and metric workflows.</p>
-        </article>
-      </a>
-      <a class="module-link" href="/cv-skills/">
-        <article class="meta-card">
-          <p class="bento-kicker">CV & Skills</p>
-          <p>Interactive skill chips, education timeline, and reference links.</p>
-        </article>
-      </a>
+    <h2>Impact Overview</h2>
+    <div class="impact-grid">
+      <article class="grid-card">
+        <h3>Watermark Radioactivity</h3>
+        <p>Contributing to research on signal persistence in generative models for an ICML 2026 submission.</p>
+      </article>
+      <article class="grid-card">
+        <h3>Benchmark Engineering</h3>
+        <p>Developing tasks and infrastructure for the European Cybersecurity & AI Hackathon Championship.</p>
+      </article>
+      <article class="grid-card">
+        <h3>Academic Excellence</h3>
+        <p>Deutschlandstipendium Scholar with a <span class="metric">3.95/4.0 CGPA</span>.</p>
+      </article>
     </div>
   </section>
-
-  <script>
-    const cards = document.querySelectorAll("[data-bento-card]");
-
-    const revealObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in-view");
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    cards.forEach((card) => {
-      revealObserver.observe(card);
-      card.addEventListener("mousemove", (event) => {
-        const rect = card.getBoundingClientRect();
-        const x = ((event.clientX - rect.left) / rect.width) * 100;
-        const y = ((event.clientY - rect.top) / rect.height) * 100;
-        card.style.setProperty("--mx", `${x}%`);
-        card.style.setProperty("--my", `${y}%`);
-      });
-    });
-
-    const metricFormatter = (value, format) => {
-      if (format === "plus") return `${value}+`;
-      if (format === "x") return `${value}x`;
-      if (format === "auroc") return (value / 1000).toFixed(3);
-      if (format === "cgpa") return `${(value / 100).toFixed(2)}/4.0`;
-      return String(value);
-    };
-
-    const counterNodes = document.querySelectorAll("[data-counter]");
-    const counterObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-
-          const el = entry.target;
-          const max = Number(el.dataset.counter);
-          const format = el.dataset.format || "int";
-          let value = 0;
-          const step = Math.max(1, Math.ceil(max / 60));
-
-          const timer = setInterval(() => {
-            value = Math.min(max, value + step);
-            el.textContent = metricFormatter(value, format);
-            if (value >= max) clearInterval(timer);
-          }, 18);
-
-          counterObserver.unobserve(el);
-        });
-      },
-      { threshold: 0.3 }
-    );
-
-    counterNodes.forEach((node) => counterObserver.observe(node));
-  </script>
 </BaseLayout>

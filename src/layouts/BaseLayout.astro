@@ -1,15 +1,14 @@
 ---
 import "../styles/global.css";
-import "katex/dist/katex.min.css";
 
 const { title, description } = Astro.props;
 const path = Astro.url.pathname;
 
 const nav = [
   { href: "/", label: "Home" },
-  { href: "/research-experience/", label: "Research & Experience" },
-  { href: "/evaluation-suite/", label: "Evaluation Suite" },
-  { href: "/cv-skills/", label: "CV/Skills" }
+  { href: "/work-research/", label: "Work & Research" },
+  { href: "/benchmarks/", label: "Benchmarks" },
+  { href: "/technical-profile/", label: "Technical Profile" }
 ];
 ---
 
@@ -22,13 +21,13 @@ const nav = [
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <title>{title}</title>
   </head>
   <body>
-    <nav id="glass-nav" class="top-nav" aria-label="Primary">
+    <nav class="top-nav" aria-label="Primary">
       {nav.map((item) => (
         <a href={item.href} data-active={path === item.href}>{item.label}</a>
       ))}
@@ -37,15 +36,5 @@ const nav = [
     <main class="layout-shell">
       <slot />
     </main>
-
-    <script>
-      const nav = document.getElementById("glass-nav");
-      const onScroll = () => {
-        if (!nav) return;
-        nav.classList.toggle("nav-shrink", window.scrollY > 20);
-      };
-      onScroll();
-      window.addEventListener("scroll", onScroll, { passive: true });
-    </script>
   </body>
 </html>

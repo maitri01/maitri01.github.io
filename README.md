@@ -1,20 +1,19 @@
 # Maitri Shah Portfolio (Astro)
 
-A modular research portfolio built with Astro and Tailwind CSS.
+Professional multi-page portfolio built with Astro for GitHub Pages.
 
 ## Stack
 
-- Astro (static site generation)
-- Tailwind CSS (styling)
-- KaTeX (math rendering)
-- Playwright (E2E checks and screenshot capture)
+- Astro
+- CSS (custom deep-slate theme)
+- Playwright
 
 ## Pages
 
-- `/` Impact Dashboard (bento grid)
-- `/research-experience/`
-- `/evaluation-suite/`
-- `/cv-skills/`
+- `/` Home
+- `/work-research/`
+- `/benchmarks/`
+- `/technical-profile/`
 
 ## Local Development
 
@@ -35,19 +34,3 @@ npm run preview
 ```bash
 npm run test:e2e
 ```
-
-## Living Previews (Chrome screenshots)
-
-```bash
-npm run screenshots
-```
-
-Screenshots are written to `artifacts/previews/`.
-
-## GitHub Pages Deployment
-
-A GitHub Actions workflow is included at:
-
-- `.github/workflows/deploy-astro.yml`
-
-It installs dependencies, builds the Astro site, and deploys `dist/` to GitHub Pages.

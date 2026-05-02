@@ -3,10 +3,10 @@ import fs from "node:fs";
 import path from "node:path";
 
 const routes = [
-  { url: "/", file: "01-home-dashboard.png" },
-  { url: "/research-experience/", file: "02-research-experience.png" },
-  { url: "/evaluation-suite/", file: "03-evaluation-suite.png" },
-  { url: "/cv-skills/", file: "04-cv-skills.png" }
+  { url: "/", file: "01-home.png" },
+  { url: "/work-research/", file: "02-work-research.png" },
+  { url: "/benchmarks/", file: "03-benchmarks.png" },
+  { url: "/technical-profile/", file: "04-technical-profile.png" }
 ];
 
 test("capture living previews", async ({ page }) => {
