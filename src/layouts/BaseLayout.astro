@@ -6,9 +6,9 @@ const path = Astro.url.pathname;
 
 const nav = [
   { href: "/", label: "Home" },
-  { href: "/work-research/", label: "Work & Research" },
-  { href: "/benchmarks/", label: "Benchmarks" },
-  { href: "/technical-profile/", label: "Technical Profile" }
+  { href: "/work-experience/", label: "Work Experience" },
+  { href: "/projects/", label: "Projects" },
+  { href: "/cv-background/", label: "CV & Background" }
 ];
 ---
 
@@ -21,19 +21,19 @@ const nav = [
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <title>{title}</title>
   </head>
   <body>
-    <nav class="top-nav" aria-label="Primary">
+    <nav class="glass-nav" aria-label="Primary">
       {nav.map((item) => (
-        <a href={item.href} data-active={path === item.href}>{item.label}</a>
+        <a href={item.href} data-active={path === item.href} class="glass-link">{item.label}</a>
       ))}
     </nav>
 
-    <main class="layout-shell">
+    <main class="shell">
       <slot />
     </main>
   </body>

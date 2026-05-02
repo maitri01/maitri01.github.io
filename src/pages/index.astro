@@ -1,40 +1,47 @@
 ---
+import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import heroImage from "../assets/image_bfc924.jpg";
 ---
 
 <BaseLayout
   title="Maitri Shah | Home"
   description="Research-driven implementation and evaluation of reliable AI systems."
 >
-  <header class="hero-grid">
-    <section class="card">
-      <p class="kicker">Home</p>
-      <h1 class="page-title">Maitri Shah | Research-driven implementation and evaluation of reliable AI systems.</h1>
-      <p class="page-subtitle">
-        I am a researcher and developer focused on the intersection of generative AI and security. I specialize in building the
-        frameworks that evaluate model reliability and the infrastructure that supports large-scale technical competitions.
+  <section class="grid gap-4 md:grid-cols-[1.45fr_0.75fr]">
+    <article class="glass-card">
+      <h1 class="hero-title">Maitri Shah</h1>
+      <p class="hero-sub">Research Assistant at CISPA SprintML Lab | M.Sc. Student at Saarland University</p>
+      <p class="hero-body">
+        I am a researcher and developer focused on the intersection of generative AI and security. I specialize in
+        building the frameworks that evaluate model reliability and the infrastructure that supports large-scale
+        technical competitions.
       </p>
-    </section>
+    </article>
 
-    <figure class="hero-photo">
-      <img src="/assets/images/image_bfc924.jpg" alt="Maitri Shah" loading="eager" />
-    </figure>
-  </header>
+    <aside class="glass-card border-cyanaccent/40 shadow-neon">
+      <Image src={heroImage} alt="Maitri Shah" class="h-full min-h-[240px] w-full rounded-xl object-cover" />
+    </aside>
+  </section>
 
-  <section class="section">
-    <h2>Impact Overview</h2>
-    <div class="impact-grid">
-      <article class="grid-card">
-        <h3>Watermark Radioactivity</h3>
-        <p>Contributing to research on signal persistence in generative models for an ICML 2026 submission.</p>
+  <section class="mt-10">
+    <h2 class="section-title">Impact Overview</h2>
+    <div class="mt-4 grid gap-4 md:grid-cols-2">
+      <article class="glass-card">
+        <p class="tag">Work Experience</p>
+        <p class="copy">Contributing to <strong>Watermark Radioactivity</strong> research for NeurIPS 2026 and optimizing algorithmic runtimes for high-dimensional data.</p>
       </article>
-      <article class="grid-card">
-        <h3>Benchmark Engineering</h3>
-        <p>Developing tasks and infrastructure for the European Cybersecurity & AI Hackathon Championship.</p>
+      <article class="glass-card">
+        <p class="tag">Pedagogical Leadership</p>
+        <p class="copy">Leading tutorials and infrastructure setup for <span class="metric">100+ Master's students</span> in the Trustworthy ML course at Saarland University/CISPA.</p>
       </article>
-      <article class="grid-card">
-        <h3>Academic Excellence</h3>
-        <p>Deutschlandstipendium Scholar with a <span class="metric">3.95/4.0 CGPA</span>.</p>
+      <article class="glass-card">
+        <p class="tag">Security Benchmark Development</p>
+        <p class="copy">Designing tasks and automated onboarding infrastructure for the European Cybersecurity & AI Hackathon Championship.</p>
+      </article>
+      <article class="glass-card">
+        <p class="tag">Academic Excellence</p>
+        <p class="copy"><strong>Deutschlandstipendium Scholar</strong>, a prestigious national scholarship from the German Federal Ministry of Education and Research recognizing academic excellence and potential.</p>
       </article>
     </div>
   </section>

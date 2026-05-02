@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Maitri Shah | CV & Background"
+  description="Education, grading scale context, technical inventory, and profile links."
+>
+  <header class="glass-card">
+    <h1 class="hero-title">CV & Technical Background</h1>
+    <p class="hero-body">Grounded summary of education context, technical toolkit, and role-relevant expertise.</p>
+  </header>
+
+  <section class="mt-8 grid gap-4 md:grid-cols-2">
+    <article class="glass-card">
+      <h2 class="section-title">Education & Grading Scales</h2>
+      <p class="copy"><strong>M.Sc. Data Science & Artificial Intelligence | Saarland University</strong><br />Current CGPA: <span class="metric">1.8</span></p>
+      <p class="copy">Note: In the German grading system, <span class="metric">1.0</span> is the highest possible grade and <span class="metric">4.0</span> is passing.</p>
+
+      <p class="copy"><strong>B.Tech. Artificial Intelligence | NMIMS University (India)</strong><br />CGPA: <span class="metric">3.95 / 4.0</span></p>
+      <p class="copy">Note: In this grading system, <span class="metric">4.0</span> is the highest possible grade.</p>
+    </article>
+
+    <article class="glass-card">
+      <h2 class="section-title">Technical Inventory</h2>
+      <ul class="list-clean">
+        <li><strong>Languages & Core Systems:</strong> Python (Core), PyTorch, SQL</li>
+        <li><strong>Infrastructure & Tools:</strong> SLURM, basic Docker, HuggingFace, Weights & Biases</li>
+        <li><strong>Relevant Expertise:</strong> Generative model evaluation, watermarking, adversarial robustness</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="mt-8 glass-card">
+    <h2 class="section-title">Direct Links</h2>
+    <div class="mt-4 flex flex-wrap gap-3">
+      <a class="rounded-lg border border-cyanaccent/40 bg-cyanaccent/10 px-4 py-2 font-semibold text-cyanaccent" href="/assets/pdf/Maitri_Shah_CV.pdf">Download CV (PDF)</a>
+      <a class="rounded-lg border border-cyanaccent/40 bg-cyanaccent/10 px-4 py-2 font-semibold text-cyanaccent" href="https://github.com/maitri01">GitHub</a>
+      <a class="rounded-lg border border-cyanaccent/40 bg-cyanaccent/10 px-4 py-2 font-semibold text-cyanaccent" href="https://www.linkedin.com/in/maitri-shah01">LinkedIn</a>
+    </div>
+  </section>
+</BaseLayout>

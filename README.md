@@ -1,36 +1,25 @@
-# Maitri Shah Portfolio (Astro)
+# Maitri Shah Portfolio (Astro + Tailwind)
 
-Professional multi-page portfolio built with Astro for GitHub Pages.
+Professional multi-page portfolio built with Astro and Tailwind CSS.
 
 ## Stack
 
 - Astro
-- CSS (custom deep-slate theme)
+- Tailwind CSS
 - Playwright
 
 ## Pages
 
 - `/` Home
-- `/work-research/`
-- `/benchmarks/`
-- `/technical-profile/`
+- `/work-experience/`
+- `/projects/`
+- `/cv-background/`
 
-## Local Development
+## Development
 
 ```bash
 npm install
 npm run dev
-```
-
-## Build
-
-```bash
 npm run build
-npm run preview
-```
-
-## End-to-End Tests
-
-```bash
 npm run test:e2e
 ```

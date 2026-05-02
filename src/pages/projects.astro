@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Maitri Shah | Projects"
+  description="Benchmark engineering and LLM unlearning project outcomes."
+>
+  <header class="glass-card">
+    <h1 class="hero-title">Projects</h1>
+    <p class="hero-body">Engineering projects where reliability, adversarial robustness, and real-world operations mattered.</p>
+  </header>
+
+  <section class="mt-8 glass-card">
+    <h2 class="section-title">European Cybersecurity & AI Hackathon Championship</h2>
+    <p class="copy">
+      Designing challenges for a pan-European competition reaching <span class="metric">200+ participants</span>
+      across <span class="metric">7 international venues</span>.
+    </p>
+
+    <p class="mt-4 font-bold">Infrastructure Contribution</p>
+    <ul class="list-clean">
+      <li><strong>Onboarding Automation:</strong> Developed post-login HPC scripts that provision HuggingFace datasets and build the full Conda/Python environment to reduce setup downtime.</li>
+    </ul>
+
+    <p class="mt-4 font-bold">Task Development</p>
+    <ul class="list-clean">
+      <li><strong>Image Attribution:</strong> Verifying source architectures in generated media.</li>
+      <li><strong>Model Tracer:</strong> Investigating model provenance through output distribution shifts.</li>
+      <li><strong>Watermark Detection & Removal:</strong> Testing signal resilience against adversarial perturbations.</li>
+    </ul>
+
+    <p class="mt-4 font-bold">Operational Role</p>
+    <p class="copy">Provided <span class="metric">16+ hours</span> of live technical support during 24-hour hackathon windows, resolving coding and environment conflicts in real time.</p>
+  </section>
+
+  <section class="mt-8 glass-card">
+    <h2 class="section-title">LLM Unlearning (Trustworthy ML Seminar Project)</h2>
+    <p class="copy">Evaluated GA+KL, Sequential GA, and SPUL to remove memorized training data from the OLMo-2 model.</p>
+    <p class="copy">Implemented a KL divergence-based loss term to balance utility and privacy.</p>
+    <p class="copy">
+      Achieved <span class="metric">MIA AUROC of 0.529</span> in specific evaluations while documenting the real trade-off:
+      preventing utility degradation remains a core limitation of current unlearning methods.
+    </p>
+  </section>
+</BaseLayout>

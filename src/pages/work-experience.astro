@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Maitri Shah | Work Experience"
+  description="Research assistant and teaching assistant contributions in AI security and reliability."
+>
+  <header class="glass-card">
+    <h1 class="hero-title">Work Experience</h1>
+    <p class="hero-body">Project-specific contributions focused on implementation reliability, infrastructure stability, and collaborative research delivery.</p>
+  </header>
+
+  <section class="mt-8 glass-card">
+    <h2 class="section-title">Research Assistant | CISPA Helmholtz Center (SprintML Lab)</h2>
+
+    <h3 class="project-title mt-5">Project: Watermark Radioactivity (NeurIPS 2026 Submission)</h3>
+    <p class="copy">Investigating radioactive data: how watermark signals persist or decay when generative models are trained recursively on their own outputs.</p>
+
+    <p class="mt-4 font-bold">Implementation & Contributions</p>
+    <ul class="list-clean">
+      <li><strong>Manual Evaluation:</strong> Conducted foundational manual evaluation of <span class="metric">Infinity-2B</span> before the automated pipeline existed.</li>
+      <li><strong>Backend Integration:</strong> Integrated the <span class="metric">SANA 0.6B</span> backend into the unified lab pipeline for comparative signal tracking.</li>
+      <li><strong>Statistical Refinement:</strong> Contributed to transition from P-values to <span class="metric">E-values</span> to overcome instability in black-box detection.</li>
+      <li><strong>Refactoring:</strong> Refactored detection code to fix compatibility issues and stabilize multi-GPU execution.</li>
+    </ul>
+
+    <p class="mt-4 font-bold">Learnings</p>
+    <p class="copy">Developed implementation-level understanding of StegaStamp, TrustMark, RivaGAN, and BitMark watermarking schemes.</p>
+
+    <h3 class="project-title mt-7">Project: QuadTransport</h3>
+    <p class="copy"><strong>Role:</strong> Research Assistant focusing on performance engineering.</p>
+    <p class="copy"><strong>Contribution:</strong> Redesigned Hungarian-algorithm-based Wasserstein distance computation using Quad-tree partitioning in Java.</p>
+    <p class="copy"><strong>Outcome:</strong> Achieved <span class="metric">50x runtime reduction</span> from 35 minutes to 12 seconds for targeted workloads.</p>
+  </section>
+
+  <section class="mt-8 glass-card">
+    <h2 class="section-title">Teaching Assistant | Trustworthy Machine Learning (Saarland University / CISPA)</h2>
+    <p class="copy"><strong>Scale:</strong> Supporting a graduate-level cohort of <span class="metric">100+ Master's students</span>.</p>
+
+    <p class="mt-4 font-bold">My Contributions</p>
+    <ul class="list-clean">
+      <li><strong>Tutorial Leadership:</strong> Leading sessions on assignment methodology and strategic approaches for complex security tasks.</li>
+      <li><strong>Cluster Management:</strong> Managing GPU cluster setup and troubleshooting to keep student model execution stable.</li>
+      <li><strong>Course Development:</strong> Co-developing assignments and supporting grading workflows for projects and examinations.</li>
+    </ul>
+
+    <p class="copy"><strong>Professional Growth:</strong> Refined problem-solving and communication by mentoring students through implementation hurdles.</p>
+  </section>
+</BaseLayout>
