@@ -1,0 +1,447 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg: #0a0f1e;
+  --bg-2: #121935;
+  --text: #e2e8f0;
+  --muted: #97a6bc;
+  --line: rgba(255, 255, 255, 0.1);
+  --neon: #00f2ff;
+  --indigo: #4d00ff;
+  --amber: #ffbf47;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  background: var(--bg);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: -25%;
+  pointer-events: none;
+  z-index: -2;
+}
+
+body::before {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(0, 242, 255, 0.2), transparent 38%),
+    radial-gradient(circle at 84% 72%, rgba(77, 0, 255, 0.22), transparent 42%),
+    radial-gradient(circle at 68% 12%, rgba(0, 242, 255, 0.14), transparent 33%);
+  animation: mesh-drift 22s ease-in-out infinite alternate;
+}
+
+body::after {
+  background: linear-gradient(130deg, rgba(10, 15, 30, 0.94), rgba(12, 19, 42, 0.92));
+  z-index: -1;
+}
+
+@keyframes mesh-drift {
+  from {
+    transform: translate3d(-2%, -1%, 0) scale(1);
+  }
+  to {
+    transform: translate3d(2%, 1.5%, 0) scale(1.05);
+  }
+}
+
+::selection {
+  background: rgba(0, 242, 255, 0.25);
+}
+
+a {
+  color: var(--neon);
+}
+
+.layout-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  margin-bottom: 2.5rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.92rem;
+  transition: 200ms ease;
+}
+
+.top-nav a:hover,
+.top-nav a[data-active="true"] {
+  border-color: rgba(0, 242, 255, 0.45);
+  background: rgba(0, 242, 255, 0.12);
+  box-shadow: 0 0 16px rgba(0, 242, 255, 0.2);
+}
+
+.page-title {
+  margin: 0;
+  font-size: clamp(2rem, 3.7vw, 3.2rem);
+  line-height: 1.15;
+}
+
+.page-subtitle {
+  margin-top: 0.95rem;
+  max-width: 76ch;
+  color: var(--muted);
+  font-size: 1.03rem;
+  line-height: 1.65;
+}
+
+.section {
+  margin-top: 2.8rem;
+}
+
+.section h2 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.section p {
+  margin-top: 0.75rem;
+  line-height: 1.75;
+}
+
+.bento-kicker {
+  margin: 0 0 0.55rem;
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  color: var(--neon);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.metric,
+.metric-counter {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  color: var(--neon);
+  text-shadow: 0 0 8px rgba(0, 242, 255, 0.5);
+}
+
+.metric-academic {
+  color: var(--amber);
+  text-shadow: 0 0 8px rgba(255, 191, 71, 0.4);
+}
+
+.bento {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.bento-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.045);
+  backdrop-filter: blur(16px);
+  padding: 1.25rem;
+  transform: translateY(16px);
+  opacity: 0;
+  transition: 320ms ease;
+}
+
+.bento-card::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(0, 242, 255, 0.16), transparent 38%);
+  opacity: 0;
+  transition: opacity 220ms ease;
+  pointer-events: none;
+}
+
+.bento-card:hover::before {
+  opacity: 1;
+}
+
+.bento-card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bento-card:hover {
+  border-color: rgba(0, 242, 255, 0.5);
+  box-shadow: 0 18px 44px -24px rgba(0, 242, 255, 0.35);
+}
+
+.bento-card.pan {
+  grid-column: span 6;
+}
+
+.bento-card.research {
+  grid-column: span 6;
+}
+
+.bento-card.safety {
+  grid-column: span 7;
+}
+
+.bento-card.academic {
+  grid-column: span 5;
+}
+
+.bento-title {
+  margin: 0;
+  font-size: 1.14rem;
+}
+
+.bento-body {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.glass-card,
+.meta-card {
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.045);
+  backdrop-filter: blur(16px);
+  padding: 1.05rem;
+}
+
+.meta-grid {
+  margin-top: 1.1rem;
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.soft {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 2.1rem 0;
+}
+
+ul.clean {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+ul.clean li {
+  margin: 0.6rem 0;
+  line-height: 1.65;
+}
+
+.katex-wrap {
+  margin-top: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 242, 255, 0.3);
+  background: rgba(3, 12, 22, 0.72);
+  padding: 0.9rem;
+  overflow-x: auto;
+}
+
+.katex {
+  color: #8cf5ff;
+  text-shadow: 0 0 12px rgba(0, 242, 255, 0.55);
+}
+
+.timeline-wrap {
+  display: grid;
+  gap: 0.95rem;
+  margin-top: 1rem;
+}
+
+.timeline-nodes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.timeline-node {
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  padding: 0.45rem 0.8rem;
+  cursor: pointer;
+  transition: 180ms ease;
+}
+
+.timeline-node.active,
+.timeline-node:hover {
+  border-color: rgba(0, 242, 255, 0.5);
+  background: rgba(0, 242, 255, 0.14);
+}
+
+.terminal {
+  margin-top: 1rem;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(6, 10, 20, 0.95);
+  overflow: hidden;
+}
+
+.terminal-head {
+  padding: 0.62rem 0.8rem;
+  border-bottom: 1px solid var(--line);
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.terminal-body {
+  min-height: 180px;
+  margin: 0;
+  padding: 0.9rem;
+  color: #aef7ff;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  white-space: pre-wrap;
+}
+
+.task-grid {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.cli-btn {
+  margin-top: 0.7rem;
+  background: rgba(0, 242, 255, 0.11);
+  border: 1px solid rgba(0, 242, 255, 0.45);
+  color: var(--text);
+  border-radius: 9px;
+  padding: 0.35rem 0.65rem;
+  cursor: pointer;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+}
+
+.cli-btn:hover {
+  box-shadow: 0 0 12px rgba(0, 242, 255, 0.3);
+}
+
+.slider-block {
+  margin-top: 1rem;
+}
+
+.range-input {
+  width: 100%;
+  accent-color: #00f2ff;
+}
+
+.mode-strip {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  margin-top: 0.4rem;
+  font-size: 0.84rem;
+}
+
+.stat-row {
+  margin-top: 0.8rem;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.stat-box {
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.85rem;
+}
+
+.stat-label {
+  color: var(--muted);
+  font-size: 0.83rem;
+}
+
+.stat-value {
+  margin-top: 0.3rem;
+  font-size: 1.05rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  color: var(--neon);
+}
+
+.skill-chip-row {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-chip {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.045);
+  padding: 0.44rem 0.82rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.82rem;
+}
+
+.skill-chip.infra {
+  border-color: rgba(255, 191, 71, 0.55);
+  color: var(--amber);
+  box-shadow: 0 0 12px rgba(255, 191, 71, 0.2);
+}
+
+.edu-timeline {
+  margin-top: 1rem;
+  border-left: 2px solid rgba(0, 242, 255, 0.35);
+  padding-left: 1rem;
+}
+
+.edu-node {
+  position: relative;
+  margin-bottom: 1.15rem;
+}
+
+.edu-node::before {
+  content: "";
+  position: absolute;
+  left: -1.4rem;
+  top: 0.2rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--neon);
+  box-shadow: 0 0 10px rgba(0, 242, 255, 0.7);
+}
+
+@media (max-width: 860px) {
+  .bento-card.pan,
+  .bento-card.research,
+  .bento-card.safety,
+  .bento-card.academic {
+    grid-column: span 12;
+  }
+
+  .meta-grid,
+  .stat-row {
+    grid-template-columns: 1fr;
+  }
+}

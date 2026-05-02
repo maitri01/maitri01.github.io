@@ -1,0 +1,41 @@
+---
+import "../styles/global.css";
+import "katex/dist/katex.min.css";
+
+const { title, description } = Astro.props;
+const path = Astro.url.pathname;
+
+const nav = [
+  { href: "/", label: "Home" },
+  { href: "/research-experience/", label: "Research & Experience" },
+  { href: "/evaluation-suite/", label: "Evaluation Suite" },
+  { href: "/implementation-lab/", label: "Implementation Lab" },
+  { href: "/cv-skills/", label: "CV/Skills" }
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main class="layout-shell">
+      <nav class="top-nav" aria-label="Primary">
+        {nav.map((item) => (
+          <a href={item.href} data-active={path === item.href}>{item.label}</a>
+        ))}
+      </nav>
+      <slot />
+    </main>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Maitri Shah | Impact Dashboard"
+  description="Neon Lab dashboard for collaborative trustworthy AI research impact."
+>
+  <header>
+    <p class="bento-kicker">Neon Lab Dashboard</p>
+    <h1 class="page-title">Maitri Shah | Research-driven implementation and evaluation of reliable AI systems.</h1>
+    <p class="page-subtitle">
+      M.Sc. student at Universität des Saarlandes and Research Assistant at CISPA SprintML Lab.
+      Contributed to generative model security research and developed as part of a team the evaluation workflows used in competitive trustworthy AI settings.
+    </p>
+  </header>
+
+  <section class="bento" aria-label="Impact Bento Grid">
+    <article class="bento-card pan" data-bento-card>
+      <p class="bento-kicker">Pan-European Scale</p>
+      <h2 class="bento-title">Championship Operations</h2>
+      <p class="bento-body">
+        Contributed to security task implementation for the European Championship in Trustworthy AI.
+      </p>
+      <p class="bento-body"><span class="metric-counter" data-counter="200">0</span><span class="metric">+ Participants</span></p>
+      <p class="bento-body">Developed as part of a team deployment support across <span class="metric">7 international venues</span>.</p>
+      <p class="bento-body"><span class="metric">200+ Participants</span></p>
+    </article>
+
+    <article class="bento-card research" data-bento-card>
+      <p class="bento-kicker">Watermark Radioactivity</p>
+      <h2 class="bento-title">Multi-Hop Signal Evaluation</h2>
+      <p class="bento-body">
+        Contributed to ICML-aligned investigation of signal persistence in <span class="metric">SD2.1</span> and
+        <span class="metric">Infinity-2B</span>.
+      </p>
+      <p class="bento-body"><span class="metric">ICML 2026</span></p>
+    </article>
+
+    <article class="bento-card safety" data-bento-card>
+      <p class="bento-kicker">LLM Safety Engineering</p>
+      <h2 class="bento-title">OLMo-2 Unlearning</h2>
+      <p class="bento-body">
+        Developed as part of a team near-ideal forgetting behavior with <span class="metric">MIA AUROC 0.529</span>
+        while retaining downstream utility.
+      </p>
+    </article>
+
+    <article class="bento-card academic" data-bento-card>
+      <p class="bento-kicker">Academic Signal</p>
+      <h2 class="bento-title">Deutschlandstipendium</h2>
+      <p class="bento-body">
+        Contributed to high academic performance with <span class="metric metric-academic">CGPA 3.95/4.0</span>.
+      </p>
+      <p class="bento-body">Awarded for sustained excellence and high potential.</p>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2>Navigation</h2>
+    <div class="meta-grid">
+      <a class="meta-card" href="/research-experience/">
+        <p class="bento-kicker">Page 2</p>
+        <p>Research & Experience</p>
+      </a>
+      <a class="meta-card" href="/evaluation-suite/">
+        <p class="bento-kicker">Page 3</p>
+        <p>Evaluation Suite</p>
+      </a>
+      <a class="meta-card" href="/implementation-lab/">
+        <p class="bento-kicker">Page 4</p>
+        <p>Implementation Lab</p>
+      </a>
+      <a class="meta-card" href="/cv-skills/">
+        <p class="bento-kicker">Page 5</p>
+        <p>CV & Skills</p>
+      </a>
+    </div>
+  </section>
+
+  <script>
+    const cards = document.querySelectorAll("[data-bento-card]");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    cards.forEach((card) => {
+      observer.observe(card);
+      card.addEventListener("mousemove", (event) => {
+        const rect = card.getBoundingClientRect();
+        const x = ((event.clientX - rect.left) / rect.width) * 100;
+        const y = ((event.clientY - rect.top) / rect.height) * 100;
+        card.style.setProperty("--mx", `${x}%`);
+        card.style.setProperty("--my", `${y}%`);
+      });
+    });
+
+    const counter = document.querySelector("[data-counter='200']");
+    if (counter) {
+      const max = 200;
+      let value = 0;
+      const timer = setInterval(() => {
+        value += 5;
+        counter.textContent = String(Math.min(value, max));
+        if (value >= max) {
+          clearInterval(timer);
+        }
+      }, 16);
+    }
+  </script>
+</BaseLayout>

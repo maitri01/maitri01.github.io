@@ -4,4 +4,9 @@ _site/
 .jekyll-metadata
 vendor/
 Gemfile.lock
-
+node_modules/
+dist/
+.astro/
+playwright-report/
+test-results/
+artifacts/

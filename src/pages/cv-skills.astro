@@ -1,0 +1,64 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="CV & Skills | Maitri Shah"
+  description="Interactive skills and education timeline for recruiting and collaboration."
+>
+  <header>
+    <p class="bento-kicker">Page 5 | CV & Skills</p>
+    <h1 class="page-title">Technical Inventory and Education Track</h1>
+    <p class="page-subtitle">
+      Contributed to reproducible ML workflows across research and competition tracks, and developed as part of a team practical infrastructure support for large participant cohorts.
+    </p>
+  </header>
+
+  <section class="section glass-card">
+    <h2>Interactive Tech Stack</h2>
+
+    <p class="bento-kicker">Daily Drivers</p>
+    <div class="skill-chip-row">
+      <span class="skill-chip">Python</span>
+      <span class="skill-chip">PyTorch</span>
+      <span class="skill-chip">Scikit-learn</span>
+      <span class="skill-chip">Pandas</span>
+      <span class="skill-chip">NumPy</span>
+      <span class="skill-chip">TensorFlow</span>
+      <span class="skill-chip">SQL</span>
+      <span class="skill-chip">Java</span>
+    </div>
+
+    <p class="bento-kicker" style="margin-top:1rem;">Infrastructure</p>
+    <div class="skill-chip-row">
+      <span class="skill-chip infra">SLURM</span>
+      <span class="skill-chip infra">Docker (Basic)</span>
+      <span class="skill-chip infra">Linux/SSH</span>
+      <span class="skill-chip infra">Weights & Biases</span>
+      <span class="skill-chip infra">Hugging Face</span>
+    </div>
+  </section>
+
+  <section class="section glass-card">
+    <h2>Education Timeline</h2>
+    <div class="edu-timeline">
+      <article class="edu-node">
+        <p class="metric">M.Sc. Data Science & AI | Universität des Saarlandes</p>
+        <p>Contributed to advanced coursework in trustworthy machine learning and modern optimization.</p>
+      </article>
+      <article class="edu-node">
+        <p class="metric">B.Tech. Artificial Intelligence | SVKM'S NMIMS University</p>
+        <p>Developed as part of a team project and thesis work with <span class="metric metric-academic">CGPA 3.95/4.0</span>.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section glass-card">
+    <h2>References</h2>
+    <ul class="clean">
+      <li><a href="/assets/pdf/Maitri_Shah_CV.pdf">Download CV (PDF)</a></li>
+      <li><a href="https://github.com/maitri01">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/maitri-shah01">LinkedIn</a></li>
+    </ul>
+  </section>
+</BaseLayout>
