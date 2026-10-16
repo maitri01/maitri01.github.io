@@ -2,6 +2,16 @@
 <article class="section-shell page-shell">
   {{ with .Params.parent }}<a class="back-link" href="{{ .url }}">← {{ .title }}</a>{{ end }}
   <header class="page-heading"><p class="eyebrow">{{ .Params.eyebrow | default "Maitri Shah" }}</p><h1>{{ .Title }}</h1>{{ with .Params.subtitle }}<p class="page-subtitle">{{ . }}</p>{{ end }}</header>
-  {{ if eq .Layout "research" }}<h2 class="visually-hidden">Publications</h2><div class="research-grid">{{ range .Site.Data.publications }}{{ partial "publication-card.html" . }}{{ end }}</div>{{ else }}<div class="prose">{{ .Content }}</div>{{ end }}
+  {{ if eq .Layout "research" }}
+    <h2 class="visually-hidden">Publications</h2><div class="research-grid">{{ range .Site.Data.publications }}{{ partial "publication-card.html" . }}{{ end }}</div>
+  {{ else if eq .Layout "projects" }}
+    <nav class="page-jumps" aria-label="Project categories"><a href="#research-engineering">Research & engineering</a><a href="#earlier-projects">Earlier projects</a></nav>
+    {{ range .Site.Data.projects }}
+    <section class="project-group" aria-labelledby="{{ .id }}"><h2 id="{{ .id }}">{{ .title }}</h2><div class="practice-grid">
+      {{ range .items }}<a class="practice-card" href="{{ .url }}"><span class="eyebrow">{{ .category }}</span><h3>{{ .title }}</h3><p>{{ .summary }}</p><span class="text-link">{{ .linkLabel | default "Project details" }} <span aria-hidden="true">↗</span></span></a>{{ end }}
+    </div></section>
+    {{ end }}
+    <div class="prose">{{ .Content }}</div>
+  {{ else }}<div class="prose">{{ .Content }}</div>{{ end }}
 </article>
 {{ end }}

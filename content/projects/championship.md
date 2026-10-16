@@ -31,4 +31,12 @@ I attended all seven venues and supported participants with task-related questio
 
 ## From experiments to a live event
 
-The work combined experimental design with practical engineering. Beyond implementing tasks, I helped participants work through model, environment, and compute issues during the competitions.
+The image attribution tasks involved distinguishing generative sources and handling unfamiliar outputs. Watermarking tasks examined detection and removal in both images and text, with evaluation that balanced detection performance against image quality or text preservation. Model tracing and unlearning extended the challenges to model-level behaviour.
+
+I developed training and evaluation workflows, baseline implementations, and task configurations. This required translating research questions into datasets, model interfaces, and scoring procedures that participants could use consistently.
+
+## Infrastructure & participant support
+
+I developed onboarding automation for dataset access and Python environment setup on the computing infrastructure. During the events, I helped participants resolve task-related questions, coding and environment issues, and GPU infrastructure problems.
+
+Supporting the competitions across all seven venues connected the experimental work with the practical requirements of a live event: clear task interfaces, usable baselines, and reliable access to compute.

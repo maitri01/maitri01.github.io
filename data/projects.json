@@ -1,0 +1,56 @@
+[
+  {
+    "id": "research-engineering",
+    "title": "Research & engineering",
+    "items": [
+      {
+        "title": "CISPA European Hackathon Championship",
+        "category": "Benchmark design \u00b7 GPU infrastructure",
+        "summary": "Designed and implemented eight challenges in attribution, watermarking, model tracing, and unlearning. Supported participants across seven venues.",
+        "url": "/projects/championship/"
+      },
+      {
+        "title": "LLM unlearning",
+        "category": "Trustworthy ML \u00b7 Seminar project",
+        "summary": "Evaluated gradient-based unlearning approaches for OLMo-2, examining forgetting, membership inference, and retained model utility.",
+        "url": "/projects/llm-unlearning/"
+      },
+      {
+        "title": "QuadTransport",
+        "category": "Optimal transport \u00b7 Java",
+        "summary": "Applied quad-tree methods to improve the computational efficiency of Wasserstein distance calculations.",
+        "url": "/projects/quadtransport/"
+      },
+      {
+        "title": "ML in PL 2026 tutorials",
+        "category": "Privacy \u00b7 Security \u00b7 Teaching",
+        "summary": "Created hands-on challenges and supported participants during the privacy and security in machine learning tutorials.",
+        "url": "/projects/ml-in-pl/"
+      }
+    ]
+  },
+  {
+    "id": "earlier-projects",
+    "title": "Earlier projects",
+    "items": [
+      {
+        "title": "Multimodal biometric identification",
+        "category": "Computer vision \u00b7 Audio \u00b7 Feature fusion",
+        "summary": "Combined RGB and thermal face images with voice features to explore identification using complementary modalities.",
+        "url": "/projects/biometrics/"
+      },
+      {
+        "title": "Trust- and tag-aware recommendations",
+        "category": "Recommendation systems \u00b7 Sparse autoencoders",
+        "summary": "Implemented a research-based recommender on Last.fm, incorporating social trust and user tags to address sparse interactions.",
+        "url": "/projects/recommendations/"
+      },
+      {
+        "title": "Intraday trading signals",
+        "category": "Time-series modelling \u00b7 LSTM",
+        "summary": "Explored intraday stock modelling with an LSTM and technical indicators, focusing on feature preparation and sequence-based prediction.",
+        "url": "/projects/intraday-signals/"
+      }
+    ]
+  }
+]
