@@ -1,3 +1,4 @@
-<nav class="profile-links" aria-label="Professional profiles">
-  {{ range .Site.Data.profiles }}<a href="{{ .url }}">{{ .name }} <span aria-hidden="true">↗</span></a>{{ end }}
+{{ $iconsOnly := .iconsOnly | default false }}
+<nav class="profile-links{{ if $iconsOnly }} profile-icons{{ end }}" aria-label="Professional profiles">
+  {{ range .Site.Data.profiles }}<a href="{{ .url }}"{{ if $iconsOnly }} aria-label="{{ .name }}" title="{{ .name }}"{{ end }}>{{ if $iconsOnly }}<span aria-hidden="true">{{ readFile (printf "static/icons/%s.svg" .icon) | safeHTML }}</span>{{ else }}{{ .name }} <span aria-hidden="true">↗</span>{{ end }}</a>{{ end }}
 </nav>

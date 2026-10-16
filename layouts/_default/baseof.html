@@ -39,7 +39,7 @@
   <main id="main" tabindex="-1">{{ block "main" . }}{{ end }}</main>
   <footer class="site-footer"><div class="footer-shell">
     <p>© {{ now.Year }} Maitri Vignesh Shah <span>Saarbrücken, Germany</span></p>
-    {{ partial "profile-links.html" . }}
+    {{ partial "profile-links.html" (dict "Site" .Site "iconsOnly" false) }}
   </div></footer>
 </body>
 </html>

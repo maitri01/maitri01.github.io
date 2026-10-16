@@ -11,7 +11,7 @@
           <div class="col-auto h-100"><a href="{{ $hero.button.url }}" class="btn">{{ $hero.button.name }}</a></div>
           <div class="col-auto px-0 h-100">{{ partial "sections/hero/social.html" . }}</div>
         </div>
-        {{ partial "profile-links.html" . }}
+        {{ partial "profile-links.html" (dict "Site" .Site "iconsOnly" true) }}
       </div>
       <div class="col-sm-12 col-md-12 col-lg-4">
         <div class="row justify-content-center"><div class="col-sm-12 col-md-9 image px-5 px-md-5 px-lg-0 text-center">
