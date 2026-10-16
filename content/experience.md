@@ -17,7 +17,7 @@ My earlier projects span optimal transport, multimodal biometrics, recommendatio
 
 ### Research Assistant · CISPA
 
-**SprintML Lab, CISPA Helmholtz Center for Information Security**  
+**[SprintML Lab](https://sprintml.com/), CISPA Helmholtz Center for Information Security**  
 September 2025 to present · Germany
 
 - Contributed to watermark radioactivity research and co-authored a paper accepted at NeurIPS 2026.

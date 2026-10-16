@@ -12,7 +12,7 @@ params:
   hero:
     enable: true
     intro: Trustworthy machine learning
-    title: Maitri Shah
+    title: Maitri Vignesh Shah
     subtitle: Research grounded in experiments.
     content: "I work on trustworthy generative AI, focusing on watermarking, data provenance, and machine unlearning. I am a Research Assistant at **CISPA's SprintML Lab** and an M.Sc. student at **Saarland University**. My work combines experimental research with model training, evaluation, and GPU infrastructure."
     image: /images/maitri.jpg
