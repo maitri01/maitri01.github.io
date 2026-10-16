@@ -1,0 +1,23 @@
+{{ $hero := .Site.Params.hero }}
+<section id="hero" class="py-5 align-middle">
+  <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-8 content" id="primary-font">
+        <span class="subtitle">{{ $hero.intro }}</span>
+        <h1>{{ $hero.title }}</h1>
+        <h2>{{ $hero.subtitle }}</h2>
+        <p class="hero-content">{{ $hero.content | markdownify }}</p>
+        <div class="row">
+          <div class="col-auto h-100"><a href="{{ $hero.button.url }}" class="btn">{{ $hero.button.name }}</a></div>
+          <div class="col-auto px-0 h-100">{{ partial "sections/hero/social.html" . }}</div>
+        </div>
+        {{ partial "profile-links.html" . }}
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="row justify-content-center"><div class="col-sm-12 col-md-9 image px-5 px-md-5 px-lg-0 text-center">
+          <img src="{{ $hero.image }}" class="img-thumbnail mx-auto" alt="Maitri Shah" width="310" height="355">
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>

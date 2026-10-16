@@ -1,0 +1,3 @@
+<nav class="profile-links" aria-label="Professional profiles">
+  {{ range .Site.Data.profiles }}<a href="{{ .url }}">{{ .name }} <span aria-hidden="true">↗</span></a>{{ end }}
+</nav>
