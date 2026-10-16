@@ -1,0 +1,47 @@
+baseURL: https://maitri01.github.io/
+languageCode: en
+title: Maitri Shah
+theme: hugo-profile
+enableRobotsTXT: true
+disableKinds: [taxonomy, term, RSS]
+params:
+  title: Maitri Shah
+  description: Research assistant at CISPA and master's student at Saarland University working on trustworthy machine learning, watermarking, and data provenance.
+  favicon: /favicon.svg
+  animate: false
+  hero:
+    enable: true
+    intro: Trustworthy machine learning
+    title: Maitri Shah
+    subtitle: Research grounded in experiments.
+    content: "I study how we can trace the data behind generative models and evaluate the signals they leave behind. Research Assistant at **CISPA's SprintML Lab** and M.Sc. student at **Saarland University**."
+    image: /images/maitri.jpg
+    bottomImage:
+      enable: false
+    button:
+      enable: true
+      name: Explore my research
+      url: /research/
+      download: false
+      newPage: false
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Research
+      url: /research/
+      weight: 2
+    - name: Projects
+      url: /projects/
+      weight: 3
+    - name: Experience
+      url: /experience/
+      weight: 4
+    - name: Contact
+      url: /contact/
+      weight: 5
+markup:
+  goldmark:
+    renderer:
+      unsafe: false

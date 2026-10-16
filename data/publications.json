@@ -1,0 +1,23 @@
+[
+  {
+    "title": "RADIUM",
+    "subtitle": "RadioActive Decay of Image-Underlaid Marks",
+    "venue": "NeurIPS 2026 \u00b7 Accepted",
+    "slug": "radium",
+    "summary": "A novel method for detecting watermark radioactivity: can a model reveal that it learned from watermarked images?",
+    "paper": "https://adam-dziedzic.com/static/assets/papers/radium.pdf",
+    "code": "https://github.com/sprintml/Radium",
+    "graphic": "radioactivity",
+    "authors": "Michel Meintz, Louis Kerner, Maitri Vignesh Shah, Simon Hector, Franziska Boenisch, Adam Dziedzic"
+  },
+  {
+    "title": "Watermark Degradation",
+    "subtitle": "Across Model Iterations",
+    "venue": "ACM IH&MMSec 2026",
+    "slug": "watermark-degradation",
+    "summary": "Investigating how watermark signals survive and weaken as generated images are reused to train new models.",
+    "paper": "https://doi.org/10.1145/3785353.3815071",
+    "graphic": "iterations",
+    "authors": "M. Meintz, Maitri Vignesh Shah, B. Zhao, L. Kerner, F. Boenisch, A. Dziedzic"
+  }
+]
