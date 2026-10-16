@@ -20,14 +20,14 @@ I attended all seven venues and supported participants with task-related questio
 
 | Challenge | Focus |
 | --- | --- |
-| P2 Image Attribution | Identifying the source of generated images |
-| P3 Watermark Detection | Detecting watermarks in images |
-| V3 Watermark Removal | Removing image watermark signals |
-| S2 Model Tracer | Tracing generative models |
-| W3 LLM Watermark Detection | Detecting watermarks in generated text |
-| B3 LLM Watermark Removal | Removing text watermark signals |
-| F3 LocalizeWatermark | Localising image watermark signals |
-| F4 Unlearning | Evaluating machine unlearning |
+| Image Attribution | Identifying the source of generated images |
+| Watermark Detection | Detecting watermarks in images |
+| Watermark Removal | Removing image watermark signals |
+| Model Tracer | Tracing generative models |
+| LLM Watermark Detection | Detecting watermarks in generated text |
+| LLM Watermark Removal | Removing text watermark signals |
+| LocalizeWatermark | Localising image watermark signals |
+| Unlearning | Evaluating machine unlearning |
 
 ## From experiments to a live event
 
